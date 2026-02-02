@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_Icon",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_IconText",
+  "eventList":[],
   "managed":true,
-  "name":"o_Icon",
+  "name":"o_IconText",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Icon",
-    "path":"sprites/s_Icon/s_Icon.yy",
+    "name":"s_IconText",
+    "path":"sprites/s_IconText/s_IconText.yy",
   },
   "spriteMaskId":null,
   "visible":true,
