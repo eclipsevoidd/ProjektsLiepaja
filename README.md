@@ -1,0 +1,2 @@
+# ProjektsLiepaja
+Liepājas konkursa spēle.
