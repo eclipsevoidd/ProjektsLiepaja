@@ -9,8 +9,8 @@
   "name":"o_Car",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"DriftArenaO",
+    "path":"folders/Objects/DriftArenaO.yy",
   },
   "parentObjectId":null,
   "persistent":false,
