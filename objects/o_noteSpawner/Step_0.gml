@@ -5,7 +5,7 @@ timer += dt;
 
 
 	
-if(timer >= irandom_range(2, 5)){
+if(timer >= irandom_range(1, 4)){
 	
 	//ģenerē y kordinātu no dotā saraksta
 	var indexY = irandom(array_length(notePos) - 1);

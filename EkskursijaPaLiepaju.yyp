@@ -43,6 +43,7 @@
     {"id":{"name":"o_playerCollision","path":"objects/o_playerCollision/o_playerCollision.yy",},},
     {"id":{"name":"o_RoadBG","path":"objects/o_RoadBG/o_RoadBG.yy",},},
     {"id":{"name":"o_SceneManager","path":"objects/o_SceneManager/o_SceneManager.yy",},},
+    {"id":{"name":"o_score","path":"objects/o_score/o_score.yy",},},
     {"id":{"name":"o_songLetter","path":"objects/o_songLetter/o_songLetter.yy",},},
     {"id":{"name":"o_songLetterDestroyer","path":"objects/o_songLetterDestroyer/o_songLetterDestroyer.yy",},},
     {"id":{"name":"o_StartPoga","path":"objects/o_StartPoga/o_StartPoga.yy",},},
