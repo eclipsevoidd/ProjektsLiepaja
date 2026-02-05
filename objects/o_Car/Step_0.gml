@@ -66,6 +66,17 @@ if (abs(speed_val) > 1) {
 var _h_move = lengthdir_x(speed_val, move_dir);
 var _v_move = lengthdir_y(speed_val, move_dir);
 
+if (place_meeting(x + _h_move, y, o_Wall) || place_meeting(x, y + _v_move, o_Wall)) {
+    if (hit_timer <= 0) {
+        if (instance_exists(o_GameManager)) {
+            o_GameManager.player_points -= 1;
+            hit_timer = 30; // Can't lose points again for half a second (at 60fps)
+        }
+    }
+}
+
+if (hit_timer > 0) hit_timer--;
+
 if (place_meeting(x + _h_move, y, o_Wall)) { speed_val *= -0.4; _h_move = 0; }
 x += _h_move;
 if (place_meeting(x, y + _v_move, o_Wall)) { speed_val *= -0.4; _v_move = 0; }
