@@ -1,14 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"o_AboutPoga",
+  "%Name":"o_Ver",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_AboutPoga",
+  "name":"o_Ver",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -33,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_AboutPoga",
-    "path":"sprites/s_AboutPoga/s_AboutPoga.yy",
+    "name":"s_Ver",
+    "path":"sprites/s_Ver/s_Ver.yy",
   },
   "spriteMaskId":null,
   "visible":true,
