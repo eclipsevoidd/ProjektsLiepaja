@@ -13,3 +13,4 @@ noteData = [
 
 timer = 0;
 
+allowSpawning = false;

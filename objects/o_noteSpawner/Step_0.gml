@@ -5,7 +5,7 @@ timer += dt;
 
 
 	
-if(timer >= irandom_range(1, 4)){
+if(timer >= irandom_range(1, 4) && allowSpawning){
 	
 	//ģenerē y kordinātu no dotā saraksta
 	var indexY = irandom(array_length(notePos) - 1);
@@ -21,8 +21,6 @@ if(timer >= irandom_range(1, 4)){
 	note.sprite_index = noteData[indexPicked].sprite;
 	
 	note.pickedLetter = noteData[indexPicked].action;
-	
-	
 	
 	timer = 0;
 }
