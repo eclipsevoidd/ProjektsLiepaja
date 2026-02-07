@@ -1,0 +1,1 @@
+cameraSensitivity = 0.05;

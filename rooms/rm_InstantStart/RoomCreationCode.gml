@@ -1,0 +1,1 @@
+fadeToRoom(rm_TrashLoad, 2, 0);
