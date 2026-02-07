@@ -1,4 +1,4 @@
-o_noteSpawner.allowSpawning = true;
+o_noteSpawner.gameStarted = true;
 
 if(!audio_is_playing(snd_concertMusic)){
 	

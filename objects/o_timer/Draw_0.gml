@@ -1,0 +1,1 @@
+draw_text(10, 30, "Dziesmas ilgums: " + string(timer));

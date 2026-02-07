@@ -1,3 +1,4 @@
+
 if(totalScore < 0){
 	totalScore = 0;
 }

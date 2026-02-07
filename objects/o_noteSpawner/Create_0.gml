@@ -1,16 +1,18 @@
 notePos = [
-	{note_y: 463, noteID: 0},
-	{note_y: 487, noteID: 1},
-	{note_y: 535, noteID: 2},
-	{note_y: 572, noteID: 3},
-	{note_y: 610, noteID: 4}
+	{note_y: 455, noteID: 0},
+	{note_y: 493, noteID: 1},
+	{note_y: 534, noteID: 2},
+	{note_y: 574, noteID: 3},
+	{note_y: 614, noteID: 4}
 ];
 
 noteData = [
-	{sprite: s_letterA, action: "A"},
-	{sprite: s_letterB, action: "B"}
+	{sprite: s_arrowKeyUp, action: "VK_UP"},
+	{sprite: s_arrowKeyLeft, action: "VK_LEFT"},
+	{sprite: s_arrowKeyRight, action: "VK_RIGHT"},
+	{sprite: s_arrowKeyDown, action: "VK_DOWN"}
 ];
 
 timer = 0;
 
-allowSpawning = false;
+gameStarted = false;

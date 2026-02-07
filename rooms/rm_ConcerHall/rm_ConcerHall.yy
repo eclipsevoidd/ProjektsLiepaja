@@ -11,6 +11,7 @@
     {"name":"inst_744D8309","path":"rooms/rm_ConcerHall/rm_ConcerHall.yy",},
     {"name":"inst_2B59856C","path":"rooms/rm_ConcerHall/rm_ConcerHall.yy",},
     {"name":"inst_6D9F0DEC","path":"rooms/rm_ConcerHall/rm_ConcerHall.yy",},
+    {"name":"inst_4F8CC7D8","path":"rooms/rm_ConcerHall/rm_ConcerHall.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -21,6 +22,7 @@
         {"$GMRInstance":"v4","%Name":"inst_5984648","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5984648","objectId":{"name":"o_songLetterDestroyer","path":"objects/o_songLetterDestroyer/o_songLetterDestroyer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.546875,"scaleY":17.0625,"x":-248.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_744D8309","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_744D8309","objectId":{"name":"o_playerCollision","path":"objects/o_playerCollision/o_playerCollision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.984375,"scaleY":3.5,"x":407.0,"y":424.0,},
         {"$GMRInstance":"v4","%Name":"inst_2B59856C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B59856C","objectId":{"name":"o_score","path":"objects/o_score/o_score.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4F8CC7D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F8CC7D8","objectId":{"name":"o_timer","path":"objects/o_timer/o_timer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-64.0,},
       ],"layers":[],"name":"InstanceDestroyer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_7EDB8890","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EDB8890","objectId":{"name":"o_noteSpawner","path":"objects/o_noteSpawner/o_noteSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1955.0,"y":0.0,},
@@ -37,8 +39,8 @@
   ],
   "name":"rm_ConcerHall",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"ConcertHall",
+    "path":"folders/Rooms/ConcertHall.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

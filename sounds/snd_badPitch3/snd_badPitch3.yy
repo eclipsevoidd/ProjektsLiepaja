@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_driveby",
+  "%Name":"snd_badPitch3",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.04,
+  "duration":2.9518368,
   "exportDir":"",
-  "name":"snd_driveby",
+  "name":"snd_badPitch3",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"BadPitcches",
+    "path":"folders/Sounds/Concert/BadPitcches.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_driveby.mp3",
+  "soundFile":"snd_badPitch3.mp3",
   "volume":1.0,
 }
