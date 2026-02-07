@@ -1,0 +1,1 @@
+click_scale = lerp(click_scale, 1, 0.1);

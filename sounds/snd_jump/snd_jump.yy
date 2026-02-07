@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_jump",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"MenuSounds",
+    "path":"folders/Sounds/MenuSounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,8 +1,12 @@
-if (!panelState) {
-	global.parSpeli = instance_create_depth(75, -1500, 0, o_ParSpeliPanel, 
-		{image_xscale: 8, image_yscale: 8, panelID: "parSpeli"});
-	panelState = true;
+if (!instance_exists(o_AboutPanel)) {
+    instance_create_depth(0, 0, -10, o_AboutPanel);
 } else {
-	instance_destroy(o_ParSpeliPanel);
-	panelState = false;
+    with (o_AboutPanel) {
+        target_x = offscreen_x;
+        closing = true;
+    }
+}
+
+if (!audio_is_playing(snd_select)) {
+	audio_play_sound(snd_select, 0, false, 0.2);
 }
