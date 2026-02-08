@@ -18,3 +18,8 @@ shot_speed = 2.5;        // How fast the bar fills
 perfect_min = 75;        // Green zone start
 perfect_max = 85;        // Green zone end
 shot_result = "";
+
+target_hoop = o_hoop; // Make sure this matches your hoop object name
+
+// Replace your my_target_hoop line with this:
+my_target_hoop = noone;

@@ -1,4 +1,14 @@
-grav = 0.5;   // Gravity strength
-bounce = 0.6; // 0 is no bounce, 1 is a super ball
-hspeed = 0;   // Start still
-vspeed = 0;   // Start still
+hsp = 0;
+vsp = 0;
+grav = 0.5;
+bounce = 0.6;
+
+// --- ADD THIS LINE TO FIX THE CRASH ---
+scored = false; 
+
+// Trail Settings
+trail_length = 6;
+trail_x = array_create(trail_length, x);
+trail_y = array_create(trail_length, y);
+
+scored = false; // Add this to stop the draw event crash!
