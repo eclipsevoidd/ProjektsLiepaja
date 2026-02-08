@@ -101,10 +101,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_InstantStart","path":"rooms/rm_InstantStart/rm_InstantStart.yy",},},
     {"roomId":{"name":"rm_ConcerHall","path":"rooms/rm_ConcerHall/rm_ConcerHall.yy",},},
     {"roomId":{"name":"rm_TrashLoad","path":"rooms/rm_TrashLoad/rm_TrashLoad.yy",},},
     {"roomId":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},},
-    {"roomId":{"name":"rm_InstantStart","path":"rooms/rm_InstantStart/rm_InstantStart.yy",},},
     {"roomId":{"name":"rm_ConcertHallAfterShow","path":"rooms/rm_ConcertHallAfterShow/rm_ConcertHallAfterShow.yy",},},
   ],
   "templateType":"game",
