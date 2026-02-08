@@ -3,11 +3,11 @@ dt = delta_time / 1000000;
 timer += dt;
 
 if(o_timer.timer >= 5){
-
+	
 	if(o_timer.timer < 60 - (spawningIntensity * 100) && spawningIntensity <= 0.5)
 		spawningIntensity += 0.1;
-
-	if(timer >= abs(irandom_range(1, 4) - spawningIntensity) && gameStarted){
+		
+	if(timer >= irandom_range(1, 4) - spawningIntensity && gameStarted){
 	
 		//ģenerē y kordinātu no dotā saraksta
 		var indexY = irandom(array_length(notePos) - 1);

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_concertMusic",
   "parent":{
-    "name":"Concert",
-    "path":"folders/Sounds/Concert.yy",
+    "name":"MenuSounds",
+    "path":"folders/Sounds/MenuSounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

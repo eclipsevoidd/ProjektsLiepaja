@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_liepajaGameMenu",
+  "%Name":"snd_select",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":95.92163,
+  "duration":0.12446712,
   "exportDir":"",
-  "name":"snd_liepajaGameMenu",
+  "name":"snd_select",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"MenuSounds",
+    "path":"folders/Sounds/MenuSounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_liepajaGameMenu.mp3",
+  "soundFile":"snd_select.wav",
   "volume":1.0,
 }
