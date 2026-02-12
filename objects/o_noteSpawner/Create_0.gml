@@ -14,5 +14,5 @@ noteData = [
 ];
 
 timer = 0;
-
+spawningIntensity = 0;
 gameStarted = false;
