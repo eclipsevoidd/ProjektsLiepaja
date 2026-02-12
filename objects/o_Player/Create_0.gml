@@ -23,3 +23,5 @@ target_hoop = o_hoop; // Make sure this matches your hoop object name
 
 // Replace your my_target_hoop line with this:
 my_target_hoop = noone;
+
+is_dribbling = false;

@@ -1,3 +1,9 @@
+if (global.game_state == "MINIGAME") {
+    hsp = 0;
+    vsp = 0;
+    exit; // Stop all other logic
+}
+
 // 0. SAFETY CHECK: Ensure hoop is assigned before running logic
 if (my_target_hoop == noone) {
     if (variable_global_exists("hoop_player_target")) {
@@ -8,6 +14,14 @@ if (my_target_hoop == noone) {
 
 // 1. INPUTS
 var _input_x = (keyboard_check(vk_right) || keyboard_check(ord("D"))) - (keyboard_check(vk_left) || keyboard_check(ord("A")));
+
+
+if (has_ball && keyboard_check(ord("Q"))) {
+    is_dribbling = true;
+    sprite_index = s_player_dribble_ball; 
+} else {
+    is_dribbling = false;
+}
 
 // 2. MOVEMENT LOGIC
 if (!is_shooting) {
@@ -90,10 +104,16 @@ if (!has_ball && instance_exists(o_Enemy)) {
 // 5. ANIMATION
 if (is_shooting) {
     sprite_index = s_shoot;
-} else {
+} 
+else if (is_dribbling) {
+    // This now has priority over normal walking!
+    sprite_index = s_player_dribble_ball; 
+} 
+else {
     if (has_ball) {
         sprite_index = (hsp != 0) ? s_dribble : s_idle_ball;
     } else {
         sprite_index = (hsp != 0) ? s_walk : s_idle;
     }
 }
+

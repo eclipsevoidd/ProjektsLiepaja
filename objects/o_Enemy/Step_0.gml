@@ -1,3 +1,10 @@
+
+if (global.game_state == "MINIGAME") {
+    hsp = 0;
+    vsp = 0;
+    exit; // Stop all other logic
+}
+
 // --- 1. THE SAFETY GATE ---
 // If the hoops aren't assigned yet, try to find them and EXIT the script
 if (my_target_hoop == noone) {
@@ -6,6 +13,15 @@ if (my_target_hoop == noone) {
         player_target_hoop = global.hoop_player_target; // NPC defends LEFT
     }
     exit; // Stop running this script for this frame to prevent crashes
+}
+
+// --- 1. GAME STATE CHECK ---
+// If we just scored, are counting down, or are in the mini-game, stop moving!
+if (global.game_state == "POST_SCORE" || global.game_state == "COUNTDOWN" || global.game_state == "MINIGAME") {
+    hsp = 0;
+    vsp = 0;
+    is_shooting = false; // Stop any active shot logic
+    exit; // Stop the rest of the NPC brain from running
 }
 
 // --- 2. GRAVITY ---
@@ -29,15 +45,11 @@ if (o_Player.has_ball) {
 
     // --- STEAL ATTEMPT ---
     // Increased the steal chance and range slightly
-    if (_dist_to_player < 50 && steal_cooldown <= 0) {
-        // 2% chance per frame (at 60fps, this happens fast!)
-        if (random(100) < 2) { 
+   if (_dist_to_player < 50 && steal_cooldown <= 0 && !o_Player.is_dribbling) {
+        if (random(100) < 100) { 
             o_Player.has_ball = false;
             has_ball = true;
             steal_cooldown = 80; 
-            
-            // Optional: Give the ball a little "pop" toward the NPC
-            instance_destroy(o_Ball); // Clean up any loose balls if necessary
         }
     }
 }
