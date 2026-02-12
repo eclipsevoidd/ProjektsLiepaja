@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_timer",
+  "%Name":"o_scoreKarostasPrison",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_timer",
+  "name":"o_scoreKarostasPrison",
   "overriddenProperties":[],
   "parent":{
-    "name":"ConcertHall",
-    "path":"folders/Objects/ConcertHall.yy",
+    "name":"KarostasPrison",
+    "path":"folders/Objects/KarostasPrison.yy",
   },
   "parentObjectId":null,
   "persistent":false,

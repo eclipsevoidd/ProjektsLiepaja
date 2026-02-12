@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"maze",
+  "%Name":"scr_PrisonTileSetWallCollision",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"maze",
+  "name":"scr_PrisonTileSetWallCollision",
   "parent":{
     "name":"KarostasPrison",
     "path":"folders/Scripts/KarostasPrison.yy",

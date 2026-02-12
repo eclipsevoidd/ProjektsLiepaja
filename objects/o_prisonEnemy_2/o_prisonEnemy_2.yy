@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_score",
+  "%Name":"o_prisonEnemy_2",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_score",
+  "name":"o_prisonEnemy_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"ConcertHall",
-    "path":"folders/Objects/ConcertHall.yy",
+    "name":"KarostasPrison",
+    "path":"folders/Objects/KarostasPrison.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_prisonEnemy",
+    "path":"sprites/s_prisonEnemy/s_prisonEnemy.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

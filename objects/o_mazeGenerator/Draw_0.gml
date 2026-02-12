@@ -1,1 +1,0 @@
-draw_maze(maze_test, 15, (room_width - 15 * 50) / 2, (room_height- 15 * 50) / 2);
