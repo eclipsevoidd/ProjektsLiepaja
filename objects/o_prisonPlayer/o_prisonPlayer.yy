@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_KarostasPrisoner",
+    "path":"sprites/s_KarostasPrisoner/s_KarostasPrisoner.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

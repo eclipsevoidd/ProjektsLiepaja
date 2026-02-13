@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_prisonEnemy",
-    "path":"sprites/s_prisonEnemy/s_prisonEnemy.yy",
+    "name":"s_KarostasPrisonOfficer_2",
+    "path":"sprites/s_KarostasPrisonOfficer_2/s_KarostasPrisonOfficer_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

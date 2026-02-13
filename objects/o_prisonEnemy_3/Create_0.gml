@@ -1,3 +1,13 @@
+// Animation variables
+frame_index = 0;      // Current frame
+frame_delay = 10;     // Steps to wait per frame
+frame_timer = 0;      // Timer for frame delay
+
+// Direction
+facing_right = true;  // Start facing right
+
+npc_speed = 4;
+
 // --- GRID SETTINGS ---
 grid_width = 64;
 grid_height = 64;
