@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"o_scorePointsPrison",
+  "%Name":"o_itemKarostasPrison",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_prisonPlayer","path":"objects/o_prisonPlayer/o_prisonPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_scorePointsPrison",
+  "name":"o_itemKarostasPrison",
   "overriddenProperties":[],
   "parent":{
     "name":"KarostasPrison",
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite38",
+    "path":"sprites/Sprite38/Sprite38.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

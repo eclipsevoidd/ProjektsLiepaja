@@ -1,7 +1,7 @@
 // --------------------------
 // MOVEMENT CONFIG
 // --------------------------
-move_speed = 4;            
+         
 idle_frame = 0;            
 running_frames_start = 1;  
 running_frames_end = sprite_get_number(sprite_index) - 1;
@@ -11,6 +11,15 @@ running_frames_end = sprite_get_number(sprite_index) - 1;
 // --------------------------
 var input_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var input_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+
+// --------------------------
+// Debug
+// --------------------------
+
+if(keyboard_check_pressed(vk_f1)){
+	move_speed ++;
+}
+
 
 // Normalize diagonal movement
 var len = point_distance(0, 0, input_x, input_y);

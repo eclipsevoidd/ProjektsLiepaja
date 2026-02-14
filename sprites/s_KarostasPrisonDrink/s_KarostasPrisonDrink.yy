@@ -1,27 +1,27 @@
 {
   "$GMSprite":"v2",
-  "%Name":"s_KrostasPrisonKey_1",
+  "%Name":"s_KarostasPrisonDrink",
   "bboxMode":0,
-  "bbox_bottom":216,
-  "bbox_left":0,
-  "bbox_right":492,
-  "bbox_top":0,
+  "bbox_bottom":49,
+  "bbox_left":18,
+  "bbox_right":43,
+  "bbox_top":16,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6113afc9-c67f-46ad-8234-4c891b3c30e3","name":"6113afc9-c67f-46ad-8234-4c891b3c30e3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4884dee9-d660-4f0b-a5c9-94b9e15b8a67","name":"4884dee9-d660-4f0b-a5c9-94b9e15b8a67","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":217,
+  "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8cbbab49-d58a-4510-8b64-465dadbe8b26","blendMode":0,"displayName":"default","isLocked":false,"name":"8cbbab49-d58a-4510-8b64-465dadbe8b26","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7ddbe5b0-bbf6-4332-b380-a52ceb8b810c","blendMode":0,"displayName":"default","isLocked":false,"name":"7ddbe5b0-bbf6-4332-b380-a52ceb8b810c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"s_KrostasPrisonKey_1",
+  "name":"s_KarostasPrisonDrink",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"s_KrostasPrisonKey_1",
+    "%Name":"s_KarostasPrisonDrink",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"s_KrostasPrisonKey_1",
+    "name":"s_KarostasPrisonDrink",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6113afc9-c67f-46ad-8234-4c891b3c30e3","path":"sprites/s_KrostasPrisonKey_1/s_KrostasPrisonKey_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"37e66229-ad45-4359-88d1-1b5115d6cb23","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4884dee9-d660-4f0b-a5c9-94b9e15b8a67","path":"sprites/s_KarostasPrisonDrink/s_KarostasPrisonDrink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"76d39a24-1ee4-4210-b417-6a903b3fc029","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":493,
+  "width":64,
 }
