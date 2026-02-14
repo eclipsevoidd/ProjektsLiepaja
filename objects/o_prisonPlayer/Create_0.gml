@@ -22,3 +22,5 @@ stamina_regen = 15;        // per second
 stamina_regen_delay = 1.0; // seconds to wait before regen starts
 
 regen_timer = 0;           // timer to track delay
+
+hasEnergyDrink = false;

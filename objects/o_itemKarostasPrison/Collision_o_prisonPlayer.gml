@@ -9,3 +9,8 @@ if(sprite_index == s_KarostasPrisonIce){
 	o_prisonEnemy_3.canMove = false;
 	instance_destroy();
 }
+
+if(sprite_index == s_KarostasPrisonDrink){
+	o_prisonPlayer.hasEnergyDrink = true;
+	instance_destroy();
+}

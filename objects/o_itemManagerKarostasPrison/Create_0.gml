@@ -1,10 +1,10 @@
 var itemPool = ds_list_create();
 
-var iceAmount = 2;
-var drinkAmount = 2;
+var iceAmount = 4;
+var drinkAmount = 4;
 keyAmount = 30 - iceAmount - drinkAmount;
 
-o_scoreKarostasPrison.totalScore = 30;
+o_scoreKarostasPrison.totalScore = keyAmount;
 
 repeat (iceAmount) ds_list_add(itemPool, 0); // ice
 repeat (drinkAmount) ds_list_add(itemPool, 1); // drink

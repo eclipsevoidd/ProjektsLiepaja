@@ -14,29 +14,51 @@ if (len > 0) {
 }
 
 // --------------------------
-// SPRINT WITH DELAYED REGEN
+// DELTA TIME
 // --------------------------
 var dt = delta_time / 1000000; // convert microseconds to seconds
-is_sprinting = keyboard_check(vk_shift) && stamina > 0 && (input_x != 0 || input_y != 0);
 
-if (is_sprinting) {
-    move_speed_current = sprint_speed;
-    stamina -= stamina_drain * dt;
-    regen_timer = 0; // reset regen delay when sprinting
+// --------------------------
+// ENERGY DRINK BOOST
+// --------------------------
+// Initialize energy drink timer if it doesn't exist
+if (!variable_instance_exists(id, "energy_timer")) energy_timer = 0;
+
+if (hasEnergyDrink) {
+    move_speed_current = 8;       // boosted speed
+    stamina = max_stamina;        // full stamina
+    energy_timer += dt;           // count the 15-second duration
+
+    if (energy_timer >= 15) {     // boost ends after 15 seconds
+        hasEnergyDrink = false;
+        energy_timer = 0;
+        move_speed_current = move_speed; // revert to normal speed
+    }
 } else {
-    move_speed_current = move_speed;
+    // --------------------------
+    // SPRINT WITH DELAYED REGEN
+    // --------------------------
+    is_sprinting = keyboard_check(vk_shift) && stamina > 0 && (input_x != 0 || input_y != 0);
 
-    // Only start regenerating after delay
-    if (stamina < max_stamina) {
-        regen_timer += dt;
-        if (regen_timer >= stamina_regen_delay) {
-            stamina += stamina_regen * dt;
+    if (is_sprinting) {
+        move_speed_current = sprint_speed;
+        stamina -= stamina_drain * dt;
+        regen_timer = 0; // reset regen delay when sprinting
+    } else {
+        move_speed_current = move_speed;
+
+        // Only start regenerating after delay
+        if (stamina < max_stamina) {
+            regen_timer += dt;
+            if (regen_timer >= stamina_regen_delay) {
+                stamina += stamina_regen * dt;
+            }
         }
     }
-}
 
-// Clamp stamina
-stamina = clamp(stamina, 0, max_stamina);
+    // Clamp stamina
+    stamina = clamp(stamina, 0, max_stamina);
+}
 
 // --------------------------
 // CALCULATE MOVEMENT VECTOR
