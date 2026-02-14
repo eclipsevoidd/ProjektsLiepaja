@@ -1,5 +1,15 @@
 if (!instance_exists(o_prisonPlayer)) exit; // Stop if no player
 
+if (!canMove) {
+	path_end();
+    freezeTimer -= delta_time; // delta_time = microseconds passed this step
+    if (freezeTimer <= 0){
+		canMove = true;
+		freezeTimer = 15 * 1000000;
+	}
+	exit; // stop movement
+}
+
 // --- Recalculate path if needed ---
 if (path == noone || distance_to_object(o_prisonPlayer) > 32) {
     if (path != noone) path_delete(path);  // Delete old path

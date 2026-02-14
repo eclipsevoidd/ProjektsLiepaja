@@ -74,6 +74,7 @@
     {"id":{"name":"o_SettingsButton","path":"objects/o_SettingsButton/o_SettingsButton.yy",},},
     {"id":{"name":"o_songLetter","path":"objects/o_songLetter/o_songLetter.yy",},},
     {"id":{"name":"o_songLetterDestroyer","path":"objects/o_songLetterDestroyer/o_songLetterDestroyer.yy",},},
+    {"id":{"name":"o_staminaKarostasPrison","path":"objects/o_staminaKarostasPrison/o_staminaKarostasPrison.yy",},},
     {"id":{"name":"o_startGameConcert","path":"objects/o_startGameConcert/o_startGameConcert.yy",},},
     {"id":{"name":"o_StartPoga","path":"objects/o_StartPoga/o_StartPoga.yy",},},
     {"id":{"name":"o_timerConcertHall","path":"objects/o_timerConcertHall/o_timerConcertHall.yy",},},

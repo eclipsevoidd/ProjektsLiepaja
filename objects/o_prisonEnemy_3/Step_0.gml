@@ -1,5 +1,15 @@
 if (!instance_exists(o_prisonPlayer)) exit; // Stop if no player
 
+if (!canMove) {
+	path_end();
+    freezeTimer -= delta_time; // delta_time = microseconds passed this step
+    if (freezeTimer <= 0){
+		canMove = true;
+		freezeTimer = 15 * 1000000;
+	}
+	exit; // stop movement
+}
+
 // --- Determine speed based on distance ---
 var dist = distance_to_object(o_prisonPlayer);
 if (dist > 128) npc_speed = 5;

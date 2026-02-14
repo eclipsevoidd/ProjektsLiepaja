@@ -14,6 +14,9 @@ grid_height = 64;
 
 path = noone;
 
+canMove = true;
+freezeTimer = 15 * 1000000;
+
 mp_grid = mp_grid_create(
     0, 0,
     room_width div grid_width,

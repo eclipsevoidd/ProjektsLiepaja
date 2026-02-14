@@ -12,7 +12,7 @@ repeat (keyAmount) ds_list_add(itemPool, 2); // keys
 
 ds_list_shuffle(itemPool);
 
-var i = 0;
+var i = 0; 
 
 with (o_itemKarostasPrison)
 {
