@@ -17,8 +17,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"TileSets",
-    "path":"folders/TileSets.yy",
+    "name":"KarostasPrisonTileSet",
+    "path":"folders/TileSets/KarostasPrisonTileSet.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

@@ -1,7 +1,7 @@
 var itemPool = ds_list_create();
 
-var iceAmount = 4;
-var drinkAmount = 4;
+var iceAmount = 5;
+var drinkAmount = 5;
 keyAmount = 30 - iceAmount - drinkAmount;
 
 o_scoreKarostasPrison.totalScore = keyAmount;
