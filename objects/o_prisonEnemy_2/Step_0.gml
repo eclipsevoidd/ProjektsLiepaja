@@ -27,16 +27,13 @@ if (path == noone || distance_to_object(o_prisonPlayer) > 32) {
     path_start(path, 3, path_action_stop, false);
 }
 
-// --- Determine facing direction ---
-// Use horizontal movement compared to previous position
-// Store previous x on first step
 if (!variable_instance_exists(id, "prev_x")) prev_x = x;
 
-var dx = x - prev_x;  // How much we moved horizontally this step
+var dx = x - prev_x; 
 if (dx > 0) facing_right = true;
 else if (dx < 0) facing_right = false;
 
-prev_x = x;  // Update for next step
+prev_x = x;
 
 // --- Handle frame delay ---
 frame_timer += 1;

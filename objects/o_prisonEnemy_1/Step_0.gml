@@ -1,18 +1,15 @@
-if (!instance_exists(o_prisonPlayer)) exit; // Stop if no player
+if (!instance_exists(o_prisonPlayer)) exit;
 
 if (!canMove) {
 	path_end();
-    freezeTimer -= delta_time; // delta_time = microseconds passed this step
+    freezeTimer -= delta_time;
     if (freezeTimer <= 0){
 		canMove = true;
 		freezeTimer = 15 * 1000000;
 	}
-    exit; // stop movement
+    exit;
 }
 
-	
-
-// --- Recalculate path if needed ---
 if (path == noone || distance_to_object(o_prisonPlayer) > 32) {
     if (path != noone) path_delete(path);  // Delete old path
 
@@ -29,9 +26,7 @@ if (path == noone || distance_to_object(o_prisonPlayer) > 32) {
     path_start(path, 2, path_action_stop, false);
 }
 
-// --- Determine facing direction ---
-// Use horizontal movement compared to previous position
-// Store previous x on first step
+
 if (!variable_instance_exists(id, "prev_x")) prev_x = x;
 
 var dx = x - prev_x;  // How much we moved horizontally this step

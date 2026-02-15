@@ -1,13 +1,13 @@
-if (!instance_exists(o_prisonPlayer)) exit; // Stop if no player
+if (!instance_exists(o_prisonPlayer)) exit;
 
 if (!canMove) {
 	path_end();
-    freezeTimer -= delta_time; // delta_time = microseconds passed this step
+    freezeTimer -= delta_time;
     if (freezeTimer <= 0){
 		canMove = true;
 		freezeTimer = 15 * 1000000;
 	}
-	exit; // stop movement
+	exit;
 }
 
 // --- Determine speed based on distance ---

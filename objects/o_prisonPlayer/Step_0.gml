@@ -1,43 +1,32 @@
-// --------------------------
 // INPUT
-// --------------------------
 var input_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var input_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-// --------------------------
 // DIAGONAL NORMALIZATION
-// --------------------------
 var len = point_distance(0, 0, input_x, input_y);
 if (len > 0) {
     input_x /= len;
     input_y /= len;
 }
 
-// --------------------------
-// DELTA TIME
-// --------------------------
-var dt = delta_time / 1000000; // convert microseconds to seconds
 
-// --------------------------
+var dt = delta_time / 1000000;
+
 // ENERGY DRINK BOOST
-// --------------------------
-// Initialize energy drink timer if it doesn't exist
 if (!variable_instance_exists(id, "energy_timer")) energy_timer = 0;
 
 if (hasEnergyDrink) {
-    move_speed_current = 8;       // boosted speed
-    stamina = max_stamina;        // full stamina
-    energy_timer += dt;           // count the 15-second duration
+    move_speed_current = 8;      
+    stamina = max_stamina; 
+    energy_timer += dt;       
 
-    if (energy_timer >= 15) {     // boost ends after 15 seconds
+    if (energy_timer >= 15) {  
         hasEnergyDrink = false;
         energy_timer = 0;
-        move_speed_current = move_speed; // revert to normal speed
+        move_speed_current = move_speed;
     }
 } else {
-    // --------------------------
     // SPRINT WITH DELAYED REGEN
-    // --------------------------
     is_sprinting = keyboard_check(vk_shift) && stamina > 0 && (input_x != 0 || input_y != 0);
 
     if (is_sprinting) {
@@ -56,19 +45,16 @@ if (hasEnergyDrink) {
         }
     }
 
-    // Clamp stamina
     stamina = clamp(stamina, 0, max_stamina);
 }
 
-// --------------------------
+
 // CALCULATE MOVEMENT VECTOR
-// --------------------------
 var move_x = input_x * move_speed_current;
 var move_y = input_y * move_speed_current;
 
-// --------------------------
 // TILE COLLISION
-// --------------------------
+
 collisionTileMap = layer_tilemap_get_id("TilesCollision");
 
 function tile_solid(_x, _y) {
@@ -101,9 +87,8 @@ if (move_y != 0) {
     }
 }
 
-// --------------------------
+
 // ANIMATION
-// --------------------------
 if (moved) {
     frame_timer += 1;
     if (frame_timer >= frame_delay) {
@@ -118,9 +103,7 @@ if (moved) {
 
 image_index = frame_index;
 
-// --------------------------
 // FACING
-// --------------------------
 if (input_x > 0) facing_right = true;
 else if (input_x < 0) facing_right = false;
 
