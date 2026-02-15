@@ -12,8 +12,8 @@ if (!canMove) {
 
 // --- Determine speed based on distance ---
 var dist = distance_to_object(o_prisonPlayer);
-if (dist > 128) npc_speed = 5;
-else if (dist > 64) npc_speed = 4;
+if (dist > 256) npc_speed = 5;
+else if (dist > 128) npc_speed = 4;
 else npc_speed = 3; // slow down when very close
 
 // --- Recalculate path if needed ---
