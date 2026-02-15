@@ -1,9 +1,15 @@
-spawn_timer++;
+ if (global.state == quizState.Game) {
+	 if (!audio_is_playing(snd_quizionaire)) {
+		 audio_play_sound(snd_quizionaire, 0, false, 0.5);
+	 }
+	spawn_timer++;
+}
+
 if (spawn_timer >= spawn_delay) {
     spawn_timer = 0;
     
     var _is_left_to_right = (line_number % 2 == 0);
-    var _x_offset = (line_number % 2) * 250;
+    var _x_offset = 75 + (line_number % 2) * 250;
     
     if (_is_left_to_right) {
         for (var _x = _x_offset; _x < room_width + 200; _x += 500) {
