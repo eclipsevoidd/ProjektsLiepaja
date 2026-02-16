@@ -17,3 +17,5 @@ if (animate) {
         }
     }
 }
+
+image_alpha = lerp(image_alpha, global.panel_alpha, 0.1);
