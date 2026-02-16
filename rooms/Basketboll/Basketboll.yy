@@ -15,6 +15,7 @@
     {"name":"inst_5F3EE415","path":"rooms/Basketboll/Basketboll.yy",},
     {"name":"inst_7412AF84","path":"rooms/Basketboll/Basketboll.yy",},
     {"name":"inst_4A18FB05","path":"rooms/Basketboll/Basketboll.yy",},
+    {"name":"inst_6EEC0296","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

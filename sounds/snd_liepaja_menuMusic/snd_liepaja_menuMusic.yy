@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_liepaja_menuMusic",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":85.84635,
+  "exportDir":"",
+  "name":"snd_liepaja_menuMusic",
+  "parent":{
+    "name":"MenuSounds",
+    "path":"folders/Sounds/MenuSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_liepaja_menuMusic.wav",
+  "volume":1.0,
+}
