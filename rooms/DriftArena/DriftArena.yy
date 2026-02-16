@@ -755,8 +755,8 @@
   ],
   "name":"DriftArena",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"DriftArena",
+    "path":"folders/Rooms/DriftArena.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

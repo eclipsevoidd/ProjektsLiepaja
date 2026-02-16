@@ -40,8 +40,8 @@
   ],
   "name":"Basketboll",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Basits",
+    "path":"folders/Rooms/Basits.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
