@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"TarzansBG1",
+  "%Name":"Sprite58",
   "bboxMode":0,
-  "bbox_bottom":703,
+  "bbox_bottom":95,
   "bbox_left":0,
-  "bbox_right":1471,
+  "bbox_right":159,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5cba13c6-7aa6-4eab-87d2-ea66c0952925","name":"5cba13c6-7aa6-4eab-87d2-ea66c0952925","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"56706d9b-8d69-424f-a95d-e00c15cd0190","name":"56706d9b-8d69-424f-a95d-e00c15cd0190","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":704,
+  "height":96,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5420b466-e2d9-48bf-a16a-8384155f6b1b","blendMode":0,"displayName":"default","isLocked":false,"name":"5420b466-e2d9-48bf-a16a-8384155f6b1b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"005f85f7-1511-4319-9910-2fea961b82b9","blendMode":0,"displayName":"default","isLocked":false,"name":"005f85f7-1511-4319-9910-2fea961b82b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"TarzansBG1",
+  "name":"Sprite58",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"TarzansBG1",
+    "%Name":"Sprite58",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"TarzansBG1",
+    "name":"Sprite58",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5cba13c6-7aa6-4eab-87d2-ea66c0952925","path":"sprites/TarzansBG1/TarzansBG1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"597bd9cd-59b3-4c1d-b79f-809b37413ab6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"56706d9b-8d69-424f-a95d-e00c15cd0190","path":"sprites/Sprite58/Sprite58.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"88fbf8c2-e28a-45ad-92f2-262fafd30bb8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1472,
+  "width":160,
 }

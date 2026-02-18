@@ -7,9 +7,10 @@
       ],},
   ],
   "macroPageTiles":{
-    "SerialiseHeight":0,
-    "SerialiseWidth":0,
-    "TileSerialiseData":[],
+    "SerialiseHeight":3,
+    "SerialiseWidth":3,
+    "TileCompressedData":[-9,0,],
+    "TileDataFormat":1,
   },
   "name":"t_TrackTiles",
   "out_columns":18,
