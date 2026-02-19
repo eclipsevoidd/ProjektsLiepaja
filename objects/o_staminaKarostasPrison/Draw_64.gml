@@ -1,13 +1,12 @@
-var stamina = o_prisonPlayer.stamina;
-var max_stamina = o_prisonPlayer.max_stamina;
+stamina = o_prisonPlayer.stamina;
+max_stamina = o_prisonPlayer.max_stamina;
 
-var bar_width = 200;
-var bar_height = 20;
-var bar_x = 50;
-var bar_y = 90;
+bar_width = 200;
+bar_height = 20;
+bar_x = 32;
+bar_y = 90;
 
-var fill_width = (stamina / max_stamina) * bar_width;
-
+fill_width = (stamina / max_stamina) * bar_width;
 // Background
 draw_set_color(c_black);
 draw_rectangle(bar_x - 2, bar_y - 2, bar_x + bar_width + 2, bar_y + bar_height + 2, false);

@@ -4,7 +4,7 @@ var iceAmount = 5;
 var drinkAmount = 5;
 keyAmount = 30 - iceAmount - drinkAmount;
 
-o_scoreKarostasPrison.totalScore = keyAmount;
+//o_scoreKarostasPrison.totalScore = keyAmount;
 
 repeat (iceAmount) ds_list_add(itemPool, 0); // ice
 repeat (drinkAmount) ds_list_add(itemPool, 1); // drink
