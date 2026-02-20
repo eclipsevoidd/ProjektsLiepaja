@@ -1,0 +1,1 @@
+global.textColor = merge_color(global.textColor, c_white, 0.05);

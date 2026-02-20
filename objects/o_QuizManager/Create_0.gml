@@ -1,5 +1,11 @@
 randomize();
 
+countdown_timer = 4;
+last_number_played = 4; 
+global.quizMusic = -1;
+
+texture_prefetch(s_PlusOne);
+
 global.sprite_map = ds_map_create();
 ds_map_add(global.sprite_map, "s_Tilts", s_Tilts);
 // kā pievienot jaunu bildi:
@@ -41,7 +47,7 @@ global.state = quizState.Game;
 global.panel_alpha = 1;
 
 // taimera iestatījumi
-global.maxTime = 10;
+global.maxTime = 102;
 global.currentTime = global.maxTime;
 global.timerActive = true;
 global.transitionStarted = false;

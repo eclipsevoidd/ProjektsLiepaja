@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_correct",
+  "%Name":"snd_blip",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.53900224,
+  "duration":0.13848072,
   "exportDir":"",
-  "name":"snd_correct",
+  "name":"snd_blip",
   "parent":{
     "name":"QuizSounds",
     "path":"folders/Sounds/QuizSounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_correct.ogg",
+  "soundFile":"snd_blip.wav",
   "volume":1.0,
 }
