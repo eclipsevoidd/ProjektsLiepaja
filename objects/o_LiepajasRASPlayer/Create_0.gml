@@ -1,0 +1,29 @@
+// Movement / animation
+idle_frame = 0;            
+running_frames_start = 1;  
+running_frames_end = sprite_get_number(sprite_index) - 1;
+
+frame_index = idle_frame;
+frame_timer = 0;
+frame_delay = 8;
+
+
+
+// Sprint / stamina
+move_speed = 3;
+sprint_speed = 4;
+
+max_stamina = 100;
+stamina = max_stamina;
+
+// per second while sprinting
+stamina_drain = 30; 
+// per second
+stamina_regen = 20;        
+ // seconds to wait before regen starts
+stamina_regen_delay = 1.0;
+
+// timer to track delay
+regen_timer = 0;           
+
+hasEnergyDrink = false;
