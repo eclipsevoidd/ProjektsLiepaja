@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Solid",
-    "path":"sprites/s_Solid/s_Solid.yy",
+    "name":"s_tarzancollision",
+    "path":"sprites/s_tarzancollision/s_tarzancollision.yy",
   },
   "spriteMaskId":null,
   "visible":true,

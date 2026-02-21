@@ -136,6 +136,7 @@
     {"id":{"name":"rm_Tarzans","path":"rooms/rm_Tarzans/rm_Tarzans.yy",},},
     {"id":{"name":"rm_TrashLoad","path":"rooms/rm_TrashLoad/rm_TrashLoad.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"scr_draw_rect_rotated","path":"scripts/scr_draw_rect_rotated/scr_draw_rect_rotated.yy",},},
     {"id":{"name":"scr_RoomTransition","path":"scripts/scr_RoomTransition/scr_RoomTransition.yy",},},
     {"id":{"name":"scr_SaveHighScore","path":"scripts/scr_SaveHighScore/scr_SaveHighScore.yy",},},
     {"id":{"name":"shd_perspective","path":"shaders/shd_perspective/shd_perspective.yy",},},
@@ -184,6 +185,7 @@
     {"id":{"name":"s_Jet","path":"sprites/s_Jet/s_Jet.yy",},},
     {"id":{"name":"s_LeftArrow","path":"sprites/s_LeftArrow/s_LeftArrow.yy",},},
     {"id":{"name":"s_LiepajaRobezaPillar","path":"sprites/s_LiepajaRobezaPillar/s_LiepajaRobezaPillar.yy",},},
+    {"id":{"name":"s_LocMap","path":"sprites/s_LocMap/s_LocMap.yy",},},
     {"id":{"name":"s_MenuLogo","path":"sprites/s_MenuLogo/s_MenuLogo.yy",},},
     {"id":{"name":"s_NineSlicePanel","path":"sprites/s_NineSlicePanel/s_NineSlicePanel.yy",},},
     {"id":{"name":"s_noteLine","path":"sprites/s_noteLine/s_noteLine.yy",},},
@@ -214,6 +216,7 @@
     {"id":{"name":"s_Tarzan_fall","path":"sprites/s_Tarzan_fall/s_Tarzan_fall.yy",},},
     {"id":{"name":"s_Tarzan_jump","path":"sprites/s_Tarzan_jump/s_Tarzan_jump.yy",},},
     {"id":{"name":"s_Tarzan_walk","path":"sprites/s_Tarzan_walk/s_Tarzan_walk.yy",},},
+    {"id":{"name":"s_tarzancollision","path":"sprites/s_tarzancollision/s_tarzancollision.yy",},},
     {"id":{"name":"s_Tarzans_Dash","path":"sprites/s_Tarzans_Dash/s_Tarzans_Dash.yy",},},
     {"id":{"name":"s_Tarzans_Idle","path":"sprites/s_Tarzans_Idle/s_Tarzans_Idle.yy",},},
     {"id":{"name":"s_TarzansMap","path":"sprites/s_TarzansMap/s_TarzansMap.yy",},},
@@ -227,9 +230,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_pool","path":"rooms/rm_pool/rm_pool.yy",},},
     {"roomId":{"name":"rm_Tarzans","path":"rooms/rm_Tarzans/rm_Tarzans.yy",},},
-    {"roomId":{"name":"DriftArena","path":"rooms/DriftArena/DriftArena.yy",},},
     {"roomId":{"name":"Basketboll","path":"rooms/Basketboll/Basketboll.yy",},},
+    {"roomId":{"name":"DriftArena","path":"rooms/DriftArena/DriftArena.yy",},},
     {"roomId":{"name":"rm_InstantStart","path":"rooms/rm_InstantStart/rm_InstantStart.yy",},},
     {"roomId":{"name":"rm_LiepajaQuiz","path":"rooms/rm_LiepajaQuiz/rm_LiepajaQuiz.yy",},},
     {"roomId":{"name":"rm_TrashLoad","path":"rooms/rm_TrashLoad/rm_TrashLoad.yy",},},
@@ -239,7 +243,6 @@
     {"children":[
         {"children":[],"groupName":"group",},
       ],"groupName":"group",},
-    {"roomId":{"name":"rm_pool","path":"rooms/rm_pool/rm_pool.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
