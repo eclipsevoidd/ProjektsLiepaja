@@ -65,10 +65,15 @@ var moved = false;
 
 // Horizontal movement with collision
 if (move_x != 0) {
-    if (!tile_solid(x + move_x - sprite_width/2, y - sprite_height/2) &&
-        !tile_solid(x + move_x + sprite_width/2, y - sprite_height/2) &&
-        !tile_solid(x + move_x - sprite_width/2, y + sprite_height/2) &&
-        !tile_solid(x + move_x + sprite_width/2, y + sprite_height/2)) 
+
+    if (
+    !tile_solid(x + move_x - sprite_width/2, y - sprite_height/2) &&
+    !tile_solid(x + move_x + sprite_width/2, y - sprite_height/2) &&
+    !tile_solid(x + move_x - sprite_width/2, y + sprite_height/2) &&
+    !tile_solid(x + move_x + sprite_width/2, y + sprite_height/2) &&
+
+    !place_meeting(x + move_x, y, o_trashContainerParent)
+    )
     {
         x += move_x;
         moved = true;
@@ -77,15 +82,30 @@ if (move_x != 0) {
 
 // Vertical movement with collision
 if (move_y != 0) {
-    if (!tile_solid(x - sprite_width/2, y + move_y - sprite_height/2) &&
-        !tile_solid(x + sprite_width/2, y + move_y - sprite_height/2) &&
-        !tile_solid(x - sprite_width/2, y + move_y + sprite_height/2) &&
-        !tile_solid(x + sprite_width/2, y + move_y + sprite_height/2)) 
+
+    if (
+    !tile_solid(x - sprite_width/2, y + move_y - sprite_height/2) &&
+    !tile_solid(x + sprite_width/2, y + move_y - sprite_height/2) &&
+    !tile_solid(x - sprite_width/2, y + move_y + sprite_height/2) &&
+    !tile_solid(x + sprite_width/2, y + move_y + sprite_height/2) &&
+
+    !place_meeting(x, y + move_y, o_trashContainerParent)
+    )
     {
         y += move_y;
         moved = true;
     }
 }
+
+//Trash cans
+
+var nearestTrashCan = instance_nearest(x, y, o_trashContainerParent);
+    
+    if (nearestTrashCan != noone && distance_to_object(nearestTrashCan) < 25
+	&& o_itemInventoryLiepajasRAS.sprite_index != -1
+	&& keyboard_check(ord("E"))) {
+		nearestTrashCan.throwTrash = true;
+    }
 
 
 // --------------------------

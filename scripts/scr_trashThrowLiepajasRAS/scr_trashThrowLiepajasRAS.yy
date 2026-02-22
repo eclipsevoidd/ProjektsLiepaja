@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_trashThrowLiepajasRAS",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_trashThrowLiepajasRAS",
+  "parent":{
+    "name":"LiepajasRAS",
+    "path":"folders/Scripts/LiepajasRAS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

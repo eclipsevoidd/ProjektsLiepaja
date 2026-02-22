@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"o_itemKarostasPrison",
+  "%Name":"o_PplayerInventoryLiepajasRAS",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_prisonPlayer","path":"objects/o_prisonPlayer/o_prisonPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_itemKarostasPrison",
+  "name":"o_PplayerInventoryLiepajasRAS",
   "overriddenProperties":[],
   "parent":{
-    "name":"KarostasPrison",
-    "path":"folders/Objects/KarostasPrison.yy",
+    "name":"LiepajasRAS",
+    "path":"folders/Objects/LiepajasRAS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_wip64x64Sprite",
-    "path":"sprites/s_wip64x64Sprite/s_wip64x64Sprite.yy",
+    "name":"s_inventoryLiepajasRAS",
+    "path":"sprites/s_inventoryLiepajasRAS/s_inventoryLiepajasRAS.yy",
   },
   "spriteMaskId":null,
   "visible":true,
