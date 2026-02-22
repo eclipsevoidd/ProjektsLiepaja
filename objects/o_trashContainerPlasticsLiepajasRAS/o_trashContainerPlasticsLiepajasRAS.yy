@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"s_trashContainerGlassLiepajasRAS",
-    "path":"sprites/s_trashContainerGlassLiepajasRAS/s_trashContainerGlassLiepajasRAS.yy",
+    "name":"s_trashContainerPlasticsLiepajasRAS",
+    "path":"sprites/s_trashContainerPlasticsLiepajasRAS/s_trashContainerPlasticsLiepajasRAS.yy",
   },
   "spriteMaskId":null,
   "visible":true,

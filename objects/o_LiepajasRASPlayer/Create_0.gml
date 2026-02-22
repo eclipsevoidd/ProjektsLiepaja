@@ -6,7 +6,7 @@ running_frames_end = sprite_get_number(sprite_index) - 1;
 frame_index = idle_frame;
 frame_timer = 0;
 frame_delay = 8;
-
+canMove = true;
 
 
 // Sprint / stamina

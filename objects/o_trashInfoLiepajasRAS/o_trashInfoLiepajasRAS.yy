@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"o_trashContainerMetalLiepajasRAS",
+  "%Name":"o_trashInfoLiepajasRAS",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_trashContainerMetalLiepajasRAS",
+  "name":"o_trashInfoLiepajasRAS",
   "overriddenProperties":[],
   "parent":{
     "name":"LiepajasRAS",
     "path":"folders/Objects/LiepajasRAS.yy",
   },
-  "parentObjectId":{
-    "name":"o_trashContainerParent",
-    "path":"objects/o_trashContainerParent/o_trashContainerParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"s_trashContainerMetalLiepajasRAS",
-    "path":"sprites/s_trashContainerMetalLiepajasRAS/s_trashContainerMetalLiepajasRAS.yy",
+    "name":"s_trashInfoLiepajasRAS",
+    "path":"sprites/s_trashInfoLiepajasRAS/s_trashInfoLiepajasRAS.yy",
   },
   "spriteMaskId":null,
   "visible":true,

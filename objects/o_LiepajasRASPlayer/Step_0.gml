@@ -1,7 +1,10 @@
-
 var input_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var input_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+if(!canMove){
+	input_x = 0;
+	input_y = 0;
+}
 
 var len = point_distance(0, 0, input_x, input_y);
 if (len > 0) {
