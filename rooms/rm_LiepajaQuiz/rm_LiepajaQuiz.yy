@@ -9,7 +9,6 @@
     {"name":"inst_425219A6","path":"rooms/rm_LiepajaQuiz/rm_LiepajaQuiz.yy",},
     {"name":"inst_3A836ED1","path":"rooms/rm_LiepajaQuiz/rm_LiepajaQuiz.yy",},
     {"name":"inst_427D048F","path":"rooms/rm_LiepajaQuiz/rm_LiepajaQuiz.yy",},
-    {"name":"inst_6EEC0296","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
