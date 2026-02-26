@@ -69,8 +69,8 @@ var _v_move = lengthdir_y(speed_val, move_dir);
 if (place_meeting(x + _h_move, y, o_Wall) || place_meeting(x, y + _v_move, o_Wall)) {
     if (hit_timer <= 0) {
         if (instance_exists(o_GameManager)) {
-            o_GameManager.player_points -= 1;
-            hit_timer = 30; // Can't lose points again for half a second (at 60fps)
+            o_GameManager.wall_hits += 1;
+            hit_timer = 30;
         }
     }
 }

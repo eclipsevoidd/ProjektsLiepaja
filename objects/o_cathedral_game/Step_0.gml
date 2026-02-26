@@ -109,10 +109,7 @@ switch (state) {
         if (keyboard_check_pressed(vk_enter)) {
             audio_stop_sound(snd_organ);
 
-            // === INTEGRACIJA ===
-            // global.total_points += floor(points);
-            // global.visited_cathedral = true;
-            // room_goto(rm_map);
+            scr_submit_score(GAME.CATHEDRAL, floor(points));
 
             show_message("Punkti: " + string(floor(points)) + " / " + string(max_points));
         }

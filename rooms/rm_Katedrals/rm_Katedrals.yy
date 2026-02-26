@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_2ABA7782","path":"rooms/rm_Katedrals/rm_Katedrals.yy",},
-    {"name":"inst_6EEC0296","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

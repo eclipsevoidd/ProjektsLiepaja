@@ -16,6 +16,7 @@
     {"name":"inst_46B04F36","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
     {"name":"inst_566600C1","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
     {"name":"inst_6AD60262","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
+    {"name":"inst_725E4770","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +33,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_7E434578","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E434578","objectId":{"name":"o_CameraController","path":"objects/o_CameraController/o_CameraController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":-64.0,},
         {"$GMRInstance":"v4","%Name":"inst_11939837","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11939837","objectId":{"name":"o_LiepajaPillar","path":"objects/o_LiepajaPillar/o_LiepajaPillar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.1821415,"scaleY":2.1821413,"x":384.0,"y":128.0,},
+        {"$GMRInstance":"v4","%Name":"inst_725E4770","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_725E4770","objectId":{"name":"o_ScoreManager","path":"objects/o_ScoreManager/o_ScoreManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-64.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_464B8343","colour":4291611852,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_464B8343","objectId":{"name":"o_RoadBG","path":"objects/o_RoadBG/o_RoadBG.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.2,"scaleY":1.2,"x":-85.0,"y":-33.0,},

@@ -1,3 +1,5 @@
+// Drošības pārbaude — ja nav Player, nedari neko
+if (!instance_exists(o_Player)) exit;
 
 if (global.game_state == "MINIGAME") {
     hsp = 0;

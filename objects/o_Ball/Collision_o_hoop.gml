@@ -1,14 +1,18 @@
-
 if (!scored) {
     scored = true;
 
-    // 1. CREATE VISUAL EFFECT
     instance_create_layer(other.x, other.y, "Instances", o_ScoreEffect);
-
     hsp = 0;
     vsp = 2;
 
-    // 3. STOP NPC BEHAVIOR
+    // Award points to the correct team
+    if (variable_global_exists("hoop_player_target")) {
+        if (other.id == global.hoop_player_target) {
+            global.player_score += global.points_per_basket;
+        } else if (other.id == global.hoop_enemy_target) {
+            global.enemy_score += global.points_per_basket;
+        }
+    }
 
     if (instance_exists(o_Enemy)) {
         o_Enemy.has_ball = false;
@@ -17,14 +21,13 @@ if (!scored) {
         o_Enemy.vsp = 0;
     }
 
-    // 4. DETERMINE GAME FLOW (Practice vs Match)
-    if (instance_exists(o_Enemy)) {
+    if (global.game_state == "PRACTICE") {
+        alarm[0] = 60;
+    }
+    else if (instance_exists(o_Enemy)) {
         global.game_state = "POST_SCORE";
-        global.score_delay = 90; 
+        global.score_delay = 90;
     } else {
-        // --- PRACTICE MODE ---
-
-        global.game_state = "PLAYING";
-        alarm[0] = 60; 
+        alarm[0] = 60;
     }
 }

@@ -6,6 +6,7 @@ if (timer <= 0) {
     timer = 0;
     game_active = false;
     game_ended = true;
+	scr_submit_score(GAME.POOL, score_total);
     exit;
 }
 
