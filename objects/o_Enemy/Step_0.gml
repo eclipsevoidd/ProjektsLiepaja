@@ -61,7 +61,7 @@ else if (has_ball) {
     hsp = _dir_to_hoop * walk_speed;
 
     // SHOOTING LOGIC
-    if (abs(x - my_target_hoop.x) < 150) {
+    if (abs(x - my_target_hoop.x) < 400) {
         hsp = 0; // Stop to shoot
         
         var _ball = instance_create_layer(x, y - 40, "Instances", o_Ball);

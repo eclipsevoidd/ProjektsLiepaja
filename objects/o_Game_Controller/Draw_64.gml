@@ -1,3 +1,5 @@
+draw_set_font(f_FranklinGothicMedium);
+
 draw_set_halign(fa_center); draw_set_valign(fa_top);
 var _sec = ceil(timer / game_get_speed(gamespeed_fps));
 var _ts = string(_sec div 60) + ":" + string_replace(string_format(_sec mod 60, 2, 0), " ", "0");
