@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"f_FranklinGothicMedium",
+  "%Name":"f_FranklinGothicDialogue",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":16,
@@ -820,7 +820,7 @@
   "last":0,
   "lineHeight":20,
   "maintainGms1Font":false,
-  "name":"f_FranklinGothicMedium",
+  "name":"f_FranklinGothicDialogue",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
