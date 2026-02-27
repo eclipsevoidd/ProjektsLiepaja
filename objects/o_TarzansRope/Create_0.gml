@@ -1,0 +1,9 @@
+rope_angle = -90;
+rope_speed = 0;
+rope_length = 96;
+rope_gravity = 0.3;
+rope_friction = 0.99;
+rope_anchor_x = x;
+rope_anchor_y = y;
+has_player = false;
+grab_cooldown = 0;

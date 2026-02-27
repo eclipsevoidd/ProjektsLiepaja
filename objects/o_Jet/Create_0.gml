@@ -1,0 +1,9 @@
+jet_angle = 0;
+firing = false;
+warning = false;
+stream_progress = 0;
+fire_duration = 90;
+warning_duration = 60;
+cooldown_duration = 180;
+state = "idle";
+state_timer = random_range(120, 240);
