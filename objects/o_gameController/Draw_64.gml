@@ -1,5 +1,46 @@
+draw_set_font(f_FranklinGothicMedium);
+
 var _w = display_get_gui_width();
 var _h = display_get_gui_height();
+
+var _w = display_get_gui_width();
+var _h = display_get_gui_height();
+
+// === MENU ===
+if (state == GS.MENU) {
+    draw_set_alpha(0.55);
+    draw_set_color(c_black);
+    draw_rectangle(0, 0, _w, _h, false);
+    draw_set_alpha(1);
+    
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_yellow);
+    draw_text_transformed(_w / 2, _h / 2 - 100, "ZIEMEĻU FORTI", 3, 3, 0);
+    
+    draw_set_color(c_gray);
+    draw_text(_w / 2, _h / 2 - 50, "Aizstāvi fortu no iebrucējiem!");
+    
+    var _btn_x = _w / 2;
+    var _btn_y = _h / 2 + 30;
+    var _mx = device_mouse_x_to_gui(0);
+    var _my = device_mouse_y_to_gui(0);
+    var _over = point_in_rectangle(_mx, _my, _btn_x - btn_hw, _btn_y - btn_hh, _btn_x + btn_hw, _btn_y + btn_hh);
+    btn_alpha = lerp(btn_alpha, _over ? 1.0 : 0.6, 0.12);
+    
+    draw_sprite_ext(s_StartPoga, 0, _btn_x, _btn_y, 1, 1, 0, c_white, btn_alpha);
+    
+    if (mouse_check_button_pressed(mb_left) && _over) {
+        state = GS.INTRO;
+        window_set_cursor(cr_none);
+        instance_create_layer(0, 0, "Instances", o_fps_gun);
+        instance_create_layer(0, 0, "Instances", o_crosshair);
+    }
+    
+    draw_set_halign(fa_left); draw_set_valign(fa_top);
+    draw_set_color(c_white); draw_set_alpha(1);
+    exit;
+}
 
 // Score (top-right)
 draw_set_alpha(0.55); draw_set_color(c_black);

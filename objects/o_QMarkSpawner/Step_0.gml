@@ -1,6 +1,6 @@
  if (global.state == quizState.Game) {
 	 if (!audio_is_playing(snd_quizionaire)) {
-		 audio_play_sound(snd_quizionaire, 0, false, 0.5);
+		 global.quizMusic = audio_play_sound(snd_quizionaire, 0, false, 0.5);
 	 }
 	spawn_timer++;
 }

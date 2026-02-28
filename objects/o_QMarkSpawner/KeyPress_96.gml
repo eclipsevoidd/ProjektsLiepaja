@@ -1,1 +1,0 @@
-global.state = quizState.Game;

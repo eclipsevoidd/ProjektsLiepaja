@@ -1,4 +1,5 @@
-/// @desc Zimesana
+draw_set_font(f_FranklinGothicMedium);
+
 if (sprite_exists(s_KatedralsBG)) {
     draw_sprite_stretched(s_KatedralsBG, 0, 0, 0, 800, 450);
 } else {
