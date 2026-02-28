@@ -5,3 +5,7 @@ image_blend = c_gray;
 is_locked = false;
 
 hover_alpha = 0;
+
+if (!variable_global_exists("currentLevel")) {
+    global.currentLevel = 0; 
+}

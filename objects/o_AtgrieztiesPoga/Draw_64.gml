@@ -30,16 +30,21 @@ var _text_y = gui_y + sprite_height + 10; // 10px padding below the button
 
 // 3. Create the string
 // Using string() ensures the numbers are converted to text properly
-var _current_lv = string(global.playerProgression);
+var _current_lv = string(global.currentLevel);
 var _total_lv = "11";
 var _display_text = _current_lv + "/" + _total_lv + " vietas apmeklētas";
 
-// 4. Draw the text with a slight shadow for readability
 draw_set_color(c_black);
-draw_text(_text_x + 2, _text_y + 2, _display_text); // Shadow
+draw_text(_text_x + 2, _text_y + 2, _display_text); // ēna
 
 draw_set_color(c_white);
-draw_text(_text_x, _text_y, _display_text); // Main text
+draw_text(_text_x, _text_y, _display_text); // pats teksts
+
+draw_set_color(c_black);
+draw_text(_text_x + 2, (_text_y * 1.2) + 2, "Kopējie punkti: " + string(totalPunkti));
+
+draw_set_color(c_white);
+draw_text(_text_x, _text_y * 1.2,"Kopējie punkti: " + string(totalPunkti));
 
 // 5. Reset alignment (Crucial! Otherwise it breaks other UI)
 draw_set_halign(fa_left);

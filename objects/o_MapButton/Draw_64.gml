@@ -1,5 +1,4 @@
 if (hover_alpha > 0.01) {
-    // 1. Convert Room Position to GUI Position
     var _cam_x = camera_get_view_x(view_camera[0]);
     var _cam_y = camera_get_view_y(view_camera[0]);
     var _gui_x = x - _cam_x;
@@ -9,29 +8,24 @@ if (hover_alpha > 0.01) {
     var _name = string_upper(location_name); 
     var _desc = _data.description;
 
-    // 2. Define Text and Wrapping
-    // Use your existing 'location_name' variable here
     var _name = string_upper(location_name); 
-    var _desc = location_description; // Assuming you have this defined too
+    var _desc = location_description;
     
     var _wrap_w = 320; 
     var _line_h = 22;
     var _padding = 16;
     var _title_space = 35;
     
-    // 3. Calculate Dynamic Height
     draw_set_font(f_FranklinGothicMedium);
     var _text_h = string_height_ext(_desc, _line_h, _wrap_w);
     
     var _box_w = _wrap_w + (_padding * 2);
     var _box_h = _text_h + _title_space + (_padding * 2);
     
-    // 4. Calculate Coordinates (Centered above the button)
     var _margin = 50; 
     var _x1 = _gui_x - (_box_w / 2);
     var _y1 = _gui_y - _box_h - _margin;
     
-    // PREVENT CLIPPING: Keep the box within the screen boundaries
     _x1 = clamp(_x1, 10, display_get_gui_width() - _box_w - 10);
     _y1 = max(10, _y1); 
     

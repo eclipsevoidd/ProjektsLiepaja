@@ -28,7 +28,7 @@ final_score = 0;
 par_time = 45;       // "perfect" time in seconds
 max_time = 120;      // worst reasonable time
 
-// Button (GUI coords — recalculate each frame like basketball)
+// Button (GUI coords — recalculate each frame like KATEDRALE)
 btn_hw = 208;
 btn_hh = 57;
 btn_alpha = 0.6;

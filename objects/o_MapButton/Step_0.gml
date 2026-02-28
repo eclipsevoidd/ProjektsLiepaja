@@ -1,4 +1,4 @@
-is_locked = (level > global.playerProgression);
+is_locked = (level > global.currentLevel);
 
 if (position_meeting(mouse_x, mouse_y, id) && !is_locked && !instance_exists(o_FadeObject)) {
     hover_alpha = lerp(hover_alpha, 1.0, 0.15);

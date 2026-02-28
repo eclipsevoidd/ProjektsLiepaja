@@ -3,7 +3,7 @@ var _my = device_mouse_y_to_gui(0);
 
 var _current_gui_x = lerp(start_x, current_x, global.uiEaseProgress);
 var _current_gui_y = current_y;
-var _final_x = _current_gui_x - (global.camXOffset * driftSpeed);
+var _final_x = _current_gui_x - (global.camXOffset * KONCERTZALESpeed);
 
 if (point_in_rectangle(_mx, _my, _final_x - (sprite_width/2), 
     _current_gui_y - (sprite_height/2), _final_x + (sprite_width/2), 

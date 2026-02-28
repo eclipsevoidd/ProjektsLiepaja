@@ -9,7 +9,7 @@ draw_set_halign(fa_center);
 draw_set_colour(c_lime);
 draw_text(cx, cy - 20, "Malacis!");
 draw_set_colour(c_white);
-draw_text(cx, cy + 20, "Izgaji tarzanu trasi !!!");
+draw_text(cx, cy + 20, "Izgaji TARZANSu trasi !!!");
 draw_set_colour(c_gray);
 draw_text(cx, cy + 70, "Press R to restart");
 draw_set_halign(fa_left);

@@ -16,8 +16,8 @@ function get_level_data(_lv) {
             break;
             
         case 2:
-            _info.target_room = rm_pool;
-            _info.description = "poolrooms"
+            _info.target_room = rm_KarostasPrisonMiniGame;
+            _info.description = "CIETUMSrooms"
             break;
             
         case 3:

@@ -1,4 +1,4 @@
-var itemPool = ds_list_create();
+var itemCIETUMS = ds_list_create();
 
 var glass = 5;
 var paper = 5;
@@ -7,18 +7,18 @@ var metal = 5;
 
 totalTrash = glass + paper + plastics + metal;
 
-repeat (glass) ds_list_add(itemPool, 0);
-repeat (paper) ds_list_add(itemPool, 1);
-repeat (plastics) ds_list_add(itemPool, 2);
-repeat (metal) ds_list_add(itemPool, 3);
+repeat (glass) ds_list_add(itemCIETUMS, 0);
+repeat (paper) ds_list_add(itemCIETUMS, 1);
+repeat (plastics) ds_list_add(itemCIETUMS, 2);
+repeat (metal) ds_list_add(itemCIETUMS, 3);
 
-ds_list_shuffle(itemPool);
+ds_list_shuffle(itemCIETUMS);
 
 var i = 0; 
 
 with (o_trashItemLiepajasRAS)
 {
-    var type = itemPool[| i];
+    var type = itemCIETUMS[| i];
     
     switch(type)
     {
@@ -31,4 +31,4 @@ with (o_trashItemLiepajasRAS)
     i++;
 }
 
-ds_list_destroy(itemPool);
+ds_list_destroy(itemCIETUMS);

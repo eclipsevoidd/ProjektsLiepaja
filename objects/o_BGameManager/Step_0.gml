@@ -23,7 +23,7 @@ if (global.game_state == "MENU") {
             exit;
         }
         if (_over_start) {
-            scr_basketball_start_match();
+            scr_KATEDRALE_start_match();
             exit;
         }
     }
@@ -43,7 +43,7 @@ if (global.game_state == "PRACTICE") {
     
     if (mouse_check_button_pressed(mb_left) && _over_go) {
         if (instance_exists(o_Ball)) { with (o_Ball) instance_destroy(); }
-        scr_basketball_start_match();
+        scr_KATEDRALE_start_match();
     }
     exit;
 }
@@ -141,7 +141,7 @@ if (global.game_state == "GAME_OVER") {
 
 
 /// Helper function
-function scr_basketball_start_match() {
+function scr_KATEDRALE_start_match() {
     global.player_score = 0;
     global.enemy_score  = 0;
     global.match_winner = "";
