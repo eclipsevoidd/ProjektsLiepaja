@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_PrisonTileSetWallCollision",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_PrisonTileSetWallCollision",
+  "parent":{
+    "name":"KarostasPrison",
+    "path":"folders/Scripts/KarostasPrison.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

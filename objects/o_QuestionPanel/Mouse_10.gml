@@ -1,0 +1,1 @@
+global.panel_alpha = 1;

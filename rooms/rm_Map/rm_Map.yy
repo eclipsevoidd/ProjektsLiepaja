@@ -1,0 +1,101 @@
+{
+  "$GMRoom":"v1",
+  "%Name":"rm_Map",
+  "creationCodeFile":"rooms/rm_Map/RoomCreationCode.gml",
+  "inheritCode":false,
+  "inheritCreationOrder":false,
+  "inheritLayers":false,
+  "instanceCreationOrder":[
+    {"name":"inst_E26B0E9","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"inst_6E1CB283","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"loc","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"spa","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"dzintars","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"rtu","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"baznica","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"driftHalle","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"cietums","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"ras","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"forti","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"tarzans","path":"rooms/rm_Map/rm_Map.yy",},
+    {"name":"inst_39077EC4","path":"rooms/rm_Map/rm_Map.yy",},
+  ],
+  "isDnd":false,
+  "layers":[
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_E26B0E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E26B0E9","objectId":{"name":"o_Map","path":"objects/o_Map/o_Map.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.2111247,"scaleY":3.2111251,"x":960.0,"y":1600.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6E1CB283","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E1CB283","objectId":{"name":"o_MapController","path":"objects/o_MapController/o_MapController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1920.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"loc","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"loc","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Olimpiskais Centrs",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":769.0,"y":1991.0,},
+        {"$GMRInstance":"v4","%Name":"spa","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"spa","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"LOC Spa",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":860.0,"y":2072.0,},
+        {"$GMRInstance":"v4","%Name":"dzintars","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"dzintars","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Lielais Dzintars",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":679.0,"y":2196.0,},
+        {"$GMRInstance":"v4","%Name":"rtu","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"rtu","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RTU Universitāte",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":679.0,"y":2271.0,},
+        {"$GMRInstance":"v4","%Name":"baznica","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"baznica","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Trīsvienības Katedrāles Baznīca",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":838.0,"y":2242.5,},
+        {"$GMRInstance":"v4","%Name":"driftHalle","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"driftHalle","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Drift Halle",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":500.0,"y":2782.0,},
+        {"$GMRInstance":"v4","%Name":"cietums","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"cietums","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Karostas Cietums",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":876.0,"y":1183.0,},
+        {"$GMRInstance":"v4","%Name":"ras","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"ras","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Liepājas RAS",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":1845.0,"y":1240.0,},
+        {"$GMRInstance":"v4","%Name":"forti","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"forti","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Ziemeļu Forti",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":583.0,"y":525.0,},
+        {"$GMRInstance":"v4","%Name":"tarzans","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"tarzans","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},"propertyId":{"name":"location_name","path":"objects/o_MapButton/o_MapButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Tarzāns",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":846.5,"y":582.0,},
+        {"$GMRInstance":"v4","%Name":"inst_39077EC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39077EC4","objectId":{"name":"o_HintText","path":"objects/o_HintText/o_HintText.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":3200.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+  ],
+  "name":"rm_Map",
+  "parent":{
+    "name":"Map",
+    "path":"folders/Rooms/Map.yy",
+  },
+  "parentRoom":null,
+  "physicsSettings":{
+    "inheritPhysicsSettings":false,
+    "PhysicsWorld":false,
+    "PhysicsWorldGravityX":0.0,
+    "PhysicsWorldGravityY":10.0,
+    "PhysicsWorldPixToMetres":0.1,
+  },
+  "resourceType":"GMRoom",
+  "resourceVersion":"2.0",
+  "roomSettings":{
+    "Height":3000,
+    "inheritRoomSettings":false,
+    "persistent":false,
+    "Width":1920,
+  },
+  "sequenceId":null,
+  "views":[
+    {"hborder":32,"hport":1080,"hspeed":-1,"hview":1080,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":1920,"wview":1920,"xport":0,"xview":0,"yport":0,"yview":2125,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+  ],
+  "viewSettings":{
+    "clearDisplayBuffer":true,
+    "clearViewBackground":false,
+    "enableViews":true,
+    "inheritViewSettings":false,
+  },
+  "volume":1.0,
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_PrisonCatch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_PrisonCatch",
+  "parent":{
+    "name":"KarostasPrison",
+    "path":"folders/Scripts/KarostasPrison.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
