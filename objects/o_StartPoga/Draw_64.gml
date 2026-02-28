@@ -13,7 +13,8 @@ if (point_in_rectangle(_mx, _my, _final_x - (sprite_width/2),
     
     // Check for click - Removed the panel restriction!
     if (mouse_check_button_pressed(mb_left)) {
-        fadeToRoom(rm_Map, 0.5, 2);
+		audio_stop_all();
+        fadeToRoom(rm_BusIntro, 1, 1);
     }
         
     ui_alpha = lerp(ui_alpha, 1.0, 0.1);
