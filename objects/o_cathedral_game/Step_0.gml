@@ -112,6 +112,10 @@ switch (state) {
             scr_submit_score(GAME.CATHEDRAL, floor(points));
 
             show_message("Punkti: " + string(floor(points)) + " / " + string(max_points));
+			
+			
+			//Teleprotēšana uz outro
+			fadeToRoom(rm_KatedraleOutro, 1, 1);
         }
         break;
 }

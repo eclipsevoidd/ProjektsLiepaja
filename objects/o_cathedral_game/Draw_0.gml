@@ -21,14 +21,14 @@ switch (state) {
 
         draw_set_font(fnt_title);
         draw_set_color(c_yellow);
-        draw_text(400, 150, "Svetas Trisvienibas katedrale");
+        draw_text(400, 150, "Svētās Trīsvienības katedrāle");
 
         draw_set_font(fnt_normal);
         draw_set_color(c_lime);
-        draw_text(400, 210, "Uzdevums: Atskano ergelu melodiju!");
+        draw_text(400, 210, "Uzdevums: Atskaņo ērģeļu melodiju!");
 
         draw_set_color(c_aqua);
-        draw_text(400, 250, "Turi markieri zalaja zona — krasies punkti!");
+        draw_text(400, 250, "Turi marķieri zaļajā zona — krāsies punkti!");
 
         draw_set_font(fnt_title);
         draw_set_color(c_yellow);
@@ -62,7 +62,7 @@ switch (state) {
         // Virsraksts
         draw_set_halign(fa_center);
         draw_set_color(c_white);
-        draw_text(400, 12, "Atskano melodiju!");
+        draw_text(400, 12, "Atskaņo melodiju!");
 
         var _bx = bar_x - bar_width / 2;
 
@@ -123,7 +123,7 @@ switch (state) {
 
         // Padoms
         draw_set_color(c_aqua);
-        draw_text(400, 440, "SPACE — pacelt markieri");
+        draw_text(400, 440, "SPACE — pacelt marķieri");
 
         draw_set_halign(fa_left);
         draw_set_font(fnt_normal);
@@ -144,7 +144,7 @@ switch (state) {
             draw_text(400, 130, "Labi!");
         } else if (_final >= 20) {
             draw_set_color(c_orange);
-            draw_text(400, 130, "Var labak...");
+            draw_text(400, 130, "Var labāk...");
         } else {
             draw_set_color(c_red);
             draw_text(400, 130, "Hmm...");
@@ -183,7 +183,7 @@ switch (state) {
         draw_text(400, 310, "Laiks: " + string(_time_used) + " sekundes");
 
         draw_set_color(c_yellow);
-        draw_text(400, 370, "[ ENTER — turpinat ]");
+        draw_text(400, 370, "[ ENTER — turpināt ]");
 
         draw_set_halign(fa_left);
         draw_set_valign(fa_top);

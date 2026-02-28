@@ -134,7 +134,7 @@ if (global.game_state == "POST_SCORE") {
 // --- GAME OVER ---
 if (global.game_state == "GAME_OVER") {
     if (keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left)) {
-        room_goto(rm_MainMenu);
+        fadeToRoom(rm_AfterBasketball, 1, 1);
     }
     exit;
 }

@@ -6,6 +6,6 @@ if(o_noteSpawner.gameStarted){
 
 if(timer <= 0){
 	timer = 0;
-	scr_submit_score(GAME.CONCERT, o_score.totalScore);
+	//scr_submit_score(GAME.CONCERT, o_score.totalScore);
 	fadeToRoom(rm_ConcertHallAfterShow, 1, 1);	
 }

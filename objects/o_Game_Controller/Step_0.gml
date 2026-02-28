@@ -10,7 +10,8 @@ if (timer <= 0) {
     timer = 0;
     game_active = false;
     game_ended = true;
-    game_state = "ENDED";
+	scr_submit_score(GAME.POOL, score_total);
+	fadeToRoom(rm_AfterPool, 1, 1);
     exit;
 }
 
