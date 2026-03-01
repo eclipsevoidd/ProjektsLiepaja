@@ -1,3 +1,4 @@
+
 if (screen_shake > 0) {
     screen_shake -= 0.4;
     camera_set_view_pos(view_camera[0],
@@ -8,6 +9,10 @@ if (screen_shake > 0) {
 }
 
 switch (state) {
+
+case GS.MENU:
+    window_set_cursor(cr_default);
+    break;
 
 case GS.INTRO:
     state = GS.PLAYING;

@@ -18,3 +18,6 @@ if (fadeOut) {
         instance_destroy();
     }
 }
+
+// in o_FadeObject step, temporarily add:
+show_debug_message("fadeOut: " + string(fadeOut) + " | alpha: " + string(alpha) + " | timer: " + string(timer) + " | room: " + string(room) + " | target: " + string(targetRoom));

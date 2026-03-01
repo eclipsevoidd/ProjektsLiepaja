@@ -1,2 +1,2 @@
-o_scoreConcertHall.totalScore -= 10;
+o_scoreConcertHall.totalScore -= 1;
 instance_destroy();

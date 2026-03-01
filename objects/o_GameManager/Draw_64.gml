@@ -1,4 +1,4 @@
-/// @desc o_GameManager – DRAW GUI
+draw_set_font(f_FranklinGothicMedium);
 
 var _w = display_get_gui_width();
 var _h = display_get_gui_height();

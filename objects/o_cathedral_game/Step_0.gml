@@ -107,7 +107,7 @@ switch (state) {
 
     case 2:
 	    if (keyboard_check_pressed(vk_enter)) {
-	        state = -1; // Move to a non-existent state so this code CANNOT run twice
+	        state = -1;
         
 	        audio_stop_sound(snd_organ);
 	        scr_submit_score(GAME.KATEDRALE, floor(points));

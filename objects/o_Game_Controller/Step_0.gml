@@ -1,40 +1,46 @@
-if (game_ended) exit;
-if (!game_active) exit;
+// === MENU ===
+if (game_state == "MENU") exit;
 
+// === ENDED ===
+if (game_state == "ENDED") exit;
+
+// === PLAYING ===
 timer -= 1;
 if (timer <= 0) {
     timer = 0;
     game_active = false;
     game_ended = true;
-	scr_submit_score(GAME.CIETUMS, score_total);
+	scr_submit_score(GAME.SPA, score_total);
+	fadeToRoom(rm_AfterPool, 1, 1);
     exit;
 }
 
-difficulty = 1 + (1 - (timer / timer_max));
+// Lēnāka grūtības pieaugšana (bija 1 + (1 - timer/max))
+difficulty = 1 + (1 - (timer / timer_max)) * 0.7;
 
-// --- Spawn swimmers ---
+// --- Spawn swimmers (max 6, bija 10) ---
 spawn_timer_swimmer -= 1;
 if (spawn_timer_swimmer <= 0) {
     var _player = instance_find(o_PlayerSpa, 0);
-    if (instance_number(o_Swimmer) < min(10, 3 + floor(difficulty * 3))) {
+    if (instance_number(o_Swimmer) < min(6, 2 + floor(difficulty * 2))) {
         var _s = instance_create_layer(0, 0, "Instances", o_Swimmer);
         _s.angle_pos = instance_exists(_player) ? _player.angle_pos + 180 + random_range(-60, 60) : random(360);
         _s.radius_pos = lerp(CIETUMS_r_inner + 25, CIETUMS_r_outer - 25, random(1));
         _s.spd = current_speed + random_range(-0.5, 0.6) * difficulty;
     }
-    spawn_timer_swimmer = floor(random_range(80, 140) / difficulty);
+    spawn_timer_swimmer = floor(random_range(100, 160) / difficulty);
 }
 
 // --- Spawn coins ---
 spawn_timer_coin -= 1;
 if (spawn_timer_coin <= 0) {
-    if (instance_number(o_Coin) < 8) {
+    if (instance_number(o_Coin) < 6) {
         var _c = instance_create_layer(0, 0, "Instances", o_Coin);
         _c.angle_pos = random(360);
         _c.radius_pos = lerp(CIETUMS_r_inner + 25, CIETUMS_r_outer - 20, random(1));
         _c.spd = current_speed;
     }
-    spawn_timer_coin = floor(random_range(50, 90) / difficulty);
+    spawn_timer_coin = floor(random_range(60, 100) / difficulty);
 }
 
 // --- Spawn ducks ---
@@ -46,7 +52,7 @@ if (spawn_timer_duck <= 0) {
         _d.radius_pos = lerp(CIETUMS_r_inner + 25, CIETUMS_r_outer - 25, random(1));
         _d.spd = current_speed + random_range(-0.2, 0.2);
     }
-    spawn_timer_duck = floor(random_range(250, 400) / difficulty);
+    spawn_timer_duck = floor(random_range(280, 420) / difficulty);
 }
 
 // --- Spawn speed rings ---
@@ -58,5 +64,5 @@ if (spawn_timer_ring <= 0) {
         _r.radius_pos = lerp(CIETUMS_r_inner + 30, CIETUMS_r_outer - 30, random(1));
         _r.spd = current_speed;
     }
-    spawn_timer_ring = floor(random_range(200, 380) / difficulty);
+    spawn_timer_ring = floor(random_range(220, 400) / difficulty);
 }

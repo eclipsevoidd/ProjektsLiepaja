@@ -1,6 +1,13 @@
-enum GS { INTRO, PLAYING, RESULTS }
-state = GS.INTRO;
+enum GS { MENU, INTRO, PLAYING, RESULTS }
+state = GS.MENU;
 intro_timer = 150;
+
+if (!variable_global_exists("scores")) {
+    global.scores = [];
+    for (var i = 0; i < 20; i++) {
+        global.scores[i] = -1;
+    }
+}
 
 game_time = 60 * 60; // 1 minute
 
@@ -54,5 +61,8 @@ popup_show_time = 120;
 
 screen_shake = 0;
 window_set_cursor(cr_none);
-instance_create_layer(0, 0, "Instances", o_fps_gun);
-instance_create_layer(0, 0, "Instances", o_crosshair);
+
+// Button
+btn_hw = 208;
+btn_hh = 57;
+btn_alpha = 0.6;

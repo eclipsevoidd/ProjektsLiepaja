@@ -6,7 +6,6 @@ if (hover_alpha > 0.01) {
 	
 	var _data = get_level_data(level);
     var _name = string_upper(location_name); 
-    var _desc = _data.description;
 
     var _name = string_upper(location_name); 
     var _desc = location_description;
