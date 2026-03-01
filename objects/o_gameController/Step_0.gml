@@ -73,7 +73,10 @@ case GS.PLAYING:
     break;
 
 case GS.RESULTS:
-	scr_submit_score(GAME.SPA, score_val);
-    if (mouse_check_button_pressed(mb_left)) room_restart();
+	scr_submit_score(GAME.FORTI, score_val);
+	completeMinigame(GAME.FORTI);
+    if (mouse_check_button_pressed(mb_left)) {
+		fadeToRoom(rm_ZiemeluFortiOutro, 1, 1);
+	}
     break;
 }

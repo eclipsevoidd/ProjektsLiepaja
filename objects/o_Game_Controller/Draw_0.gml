@@ -1,14 +1,14 @@
 with (o_Jet) {
     if (firing) {
         var _ctrl = other;
-        var _total = _ctrl.CIETUMS_r_outer - _ctrl.CIETUMS_r_inner;
+        var _total = _ctrl.pool_r_outer - _ctrl.pool_r_inner;
         var _steps = floor(stream_progress * 20);
         
         for (var s = 0; s <= _steps; s++) {
             var _frac = s / 20;
-            var _sr = _ctrl.CIETUMS_r_outer - 8 - _frac * _total;
-            var _sx = _ctrl.CIETUMS_cx + lengthdir_x(_sr, jet_angle);
-            var _sy = _ctrl.CIETUMS_cy + lengthdir_y(_sr, jet_angle);
+            var _sr = _ctrl.pool_r_outer - 8 - _frac * _total;
+            var _sx = _ctrl.pool_cx + lengthdir_x(_sr, jet_angle);
+            var _sy = _ctrl.pool_cy + lengthdir_y(_sr, jet_angle);
             
             draw_set_alpha(0.6);
             draw_set_color(make_color_rgb(180, 230, 255));
@@ -23,8 +23,8 @@ with (o_Jet) {
     // Warning
     if (warning) {
         var _ctrl = other;
-        var _jx = _ctrl.CIETUMS_cx + lengthdir_x(_ctrl.CIETUMS_r_outer, jet_angle);
-        var _jy = _ctrl.CIETUMS_cy + lengthdir_y(_ctrl.CIETUMS_r_outer, jet_angle);
+        var _jx = _ctrl.pool_cx + lengthdir_x(_ctrl.pool_r_outer, jet_angle);
+        var _jy = _ctrl.pool_cy + lengthdir_y(_ctrl.pool_r_outer, jet_angle);
         draw_set_alpha(0.3 + sin(current_time / 80) * 0.3);
         draw_set_color(c_red);
         draw_circle(_jx, _jy, 14, false);

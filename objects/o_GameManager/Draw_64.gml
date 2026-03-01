@@ -45,6 +45,10 @@ if (game_state == "MENU") {
         best_lap_time = 9999;
         lap_times = [];
         
+		if (!audio_is_playing(snd_DA_BG_music)) {
+        audio_play_sound(snd_DA_BG_music, 10, true); // true = loops
+    }
+		
         game_state = "COUNTDOWN";
         countdown_timer = 180;  // 3 seconds at 60fps
     }
@@ -138,7 +142,7 @@ if (game_state == "FINISHED") {
     draw_text(_cx, _score_y + 50, "Nospied ENTER lai turpinātu");
     
     if (keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left)) {
-        room_goto(rm_MainMenu);
+        fadeToRoom(rm_DriftArenaOutro, 1, 1);
     }
     
     draw_set_halign(fa_left); draw_set_valign(fa_top);

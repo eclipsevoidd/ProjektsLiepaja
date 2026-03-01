@@ -134,6 +134,8 @@ if (global.game_state == "POST_SCORE") {
 // --- GAME OVER ---
 if (global.game_state == "GAME_OVER") {
     if (keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left)) {
+		scr_submit_score(GAME.LOC, global.player_score);
+		completeMinigame(GAME.LOC);
         fadeToRoom(rm_AfterBasketball, 1, 1);
     }
     exit;

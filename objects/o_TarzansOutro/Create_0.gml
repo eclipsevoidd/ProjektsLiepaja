@@ -1,3 +1,6 @@
+persistent = false;
+instance_destroy(o_TarzanManager);
+
 var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 
 //Ierakstat savu teikstu šeit ir funkcionalitāte priekš auto wrap
