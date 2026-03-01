@@ -41,11 +41,15 @@ function get_level_data(_lv) {
             break;
 			
 		case 9:
-            _info.target_room = rm_PreBasketball;
+            _info.target_room = rm_RTUIntro;
             break;
 			
 		case 10:
             _info.target_room = rm_DriftArenaIntro;
+            break;
+			
+		case 11:
+            _info.target_room = rm_EndingCutscene;
             break;
     }
     

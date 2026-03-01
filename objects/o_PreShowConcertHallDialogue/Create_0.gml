@@ -8,7 +8,7 @@ dlg.dialogue_lines = ["Tā, šī ir nākamā pieturvieta.",
 	"Šeit arī ir teātris, kuru vietējie iedzīvotāji apmeklē.",
 	"Tagad visi man sekojat mums būs privāts koncerta mēģinājums, kuru varēsim visi noklausīties.",
 	"Man arī ir jāpārģērbjas.",
-	"Lai spēlētu spēli tev vajadzēs izmantot bultiņtaustiņus un nospiest tos kad tie ieiet zaļajā laukumā."
+	"Lai spēlētu spēli tev vajadzēs izmantot bultiņtaustiņus vai attiecīgi WASD un nospiest tos kad tie ieiet zaļajā laukumā."
 	];
 
 

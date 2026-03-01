@@ -110,5 +110,8 @@ else if (input_x < 0) facing_right = false;
 image_xscale = facing_right ? 1 : -1;
 
 if(playerLifes == 0){
-	fadeToRoom(rm_KarostasPrisonOutro, 1, 1);
+	
+	scr_submit_score(GAME.CIETUMS, 10);
+	completeMinigame(GAME.CIETUMS);
+	fadeToRoom(rm_KarostasPrisonOutro, 1, 1);	
 }
