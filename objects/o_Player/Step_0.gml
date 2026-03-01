@@ -73,6 +73,9 @@ if (is_shooting) {
             if (is_perfect) {
                 ball.hsp = req_hsp;
                 ball.vsp = req_vsp;
+				
+				audio_play_sound(snd_GreenGiant, 1, false);
+				
             } else if (is_orange) {
                 if (choose(true, false)) {
                     ball.hsp = req_hsp;
@@ -85,6 +88,9 @@ if (is_shooting) {
                 var _error = (shot_value < orange_min) ? 0.7 : 1.3;
                 ball.hsp = req_hsp * _error;
                 ball.vsp = req_vsp * 0.9;
+				
+				audio_play_sound(snd_FAAAH, 1, false);
+				
             }
         }
     }

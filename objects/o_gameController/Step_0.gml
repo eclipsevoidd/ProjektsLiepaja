@@ -74,6 +74,6 @@ case GS.PLAYING:
 
 case GS.RESULTS:
 	scr_submit_score(GAME.FORT_SHOOTER, score_val);
-    if (mouse_check_button_pressed(mb_left)) room_restart();
+    if (keyboard_check(vk_enter)) fadeToRoom(rm_ZiemeluFortiOutro, 1, 1);
     break;
 }

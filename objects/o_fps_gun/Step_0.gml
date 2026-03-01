@@ -6,16 +6,11 @@ var _gc = o_gameController;
 if (!instance_exists(_gc) || _gc.state != GS.PLAYING) exit;
 
 if (mouse_check_button_pressed(mb_left) && can_shoot) {
-    can_shoot = false;
-    cooldown = cooldown_max;
-    recoil = 20;
-    flash_timer = 5;
-    _gc.total_shots++;
-    _gc.screen_shake = max(_gc.screen_shake, 3);
+    audio_play_sound(snd_shoot, 15, false);
 
     var _hit = false;
 
-    // Check popups
+    // 1. Check popups
     var _pop = instance_nearest(mouse_x, mouse_y, o_enemy_popup);
     if (_pop != noone && _pop.alive) {
         if (point_distance(mouse_x, mouse_y, _pop.x, _pop.y - 30) < 50) {
@@ -23,17 +18,20 @@ if (mouse_check_button_pressed(mb_left) && can_shoot) {
             _pop.hit = true;
             scr_hit(mouse_x, mouse_y, _gc.pts_popup);
             _hit = true;
+            
+            var _snd = audio_play_sound(snd_screm, 10, false);
+            audio_sound_pitch(_snd, random_range(0.9, 1.1));
         }
     }
 
-    // Check ships
+    // 2. Check ships
     if (!_hit) {
         var _sh = instance_nearest(mouse_x, mouse_y, o_enemy_ship);
         if (_sh != noone && point_distance(mouse_x, mouse_y, _sh.x, _sh.y) < 80) {
             _sh.hp--;
             if (_sh.hp <= 0) {
                 scr_hit(_sh.x, _sh.y, _gc.pts_ship);
-                instance_destroy(_sh);
+                instance_destroy(_sh)
             } else {
                 _sh.flash = 6;
                 scr_hit(_sh.x, _sh.y, 1);
@@ -42,13 +40,16 @@ if (mouse_check_button_pressed(mb_left) && can_shoot) {
         }
     }
 
-    // Check soldiers
+    // 3. Check soldiers
     if (!_hit) {
         var _sl = instance_nearest(mouse_x, mouse_y, o_enemy_soldier);
         if (_sl != noone && point_distance(mouse_x, mouse_y, _sl.x, _sl.y - 40) < 55) {
             scr_hit(_sl.x, _sl.y, _gc.pts_soldier);
             instance_destroy(_sl);
             _hit = true;
+            
+            var _snd = audio_play_sound(snd_screm, 10, false);
+            audio_sound_pitch(_snd, random_range(1.1, 1.3)); // Higher pitch for soldiers
         }
     }
 

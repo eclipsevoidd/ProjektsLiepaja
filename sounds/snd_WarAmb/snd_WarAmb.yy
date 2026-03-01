@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_WarAmb",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":149.81514,
+  "exportDir":"",
+  "name":"snd_WarAmb",
+  "parent":{
+    "name":"Ziemeu  forti",
+    "path":"folders/Sounds/Ziemeu  forti.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_WarAmb.mp3",
+  "volume":0.4,
+}
