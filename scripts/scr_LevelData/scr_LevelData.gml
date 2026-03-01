@@ -5,7 +5,7 @@ function get_level_data(_lv) {
 
     switch (_lv) {
         case 0:
-            _info.target_room = rm_KarostasPrisonIntro;
+            _info.target_room = rm_KatedraleIntro1;
 			break;
             
         case 1:
