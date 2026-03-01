@@ -15,7 +15,6 @@ if (showing_text) {
 
     if (current_line >= array_length(dialogue_lines)) {
     showing_text = false;
-    
 
     instance_destroy();
 }
