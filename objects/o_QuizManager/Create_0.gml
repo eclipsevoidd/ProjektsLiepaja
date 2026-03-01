@@ -35,13 +35,13 @@ for (var i = 0; i < array_length(_loadedData); i++) {
 }
 
 // random jautajumi
-global.question_CIETUMS = ds_list_create();
+global.question_pool = ds_list_create();
 for (var i = 0; i < array_length(global.quizJautajumi); i++) {
-    ds_list_add(global.question_CIETUMS, i);
+    ds_list_add(global.question_pool, i);
 }
-ds_list_shuffle(global.question_CIETUMS);
-global.CIETUMS_index = 0;
-global.current_index = global.question_CIETUMS[| global.CIETUMS_index];
+ds_list_shuffle(global.question_pool);
+global.pool_index = 0;
+global.current_index = global.question_pool[| global.pool_index];
 global.jautajums = global.quizJautajumi[global.current_index];
 global.state = quizState.Game;
 global.panel_alpha = 1;

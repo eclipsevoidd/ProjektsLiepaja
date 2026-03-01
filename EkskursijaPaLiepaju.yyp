@@ -434,6 +434,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_InstantStart","path":"rooms/rm_InstantStart/rm_InstantStart.yy",},},
+    {"roomId":{"name":"Basketboll","path":"rooms/Basketboll/Basketboll.yy",},},
     {"roomId":{"name":"rm_Map","path":"rooms/rm_Map/rm_Map.yy",},},
     {"roomId":{"name":"rm_KarostasPrisonMiniGame","path":"rooms/rm_KarostasPrisonMiniGame/rm_KarostasPrisonMiniGame.yy",},},
     {"roomId":{"name":"DriftArena","path":"rooms/DriftArena/DriftArena.yy",},},
@@ -447,7 +448,6 @@
     {"roomId":{"name":"rm_InstantStart","path":"rooms/rm_InstantStart/rm_InstantStart.yy",},},
     {"roomId":{"name":"rm_Map","path":"rooms/rm_Map/rm_Map.yy",},},
     {"roomId":{"name":"DriftArena","path":"rooms/DriftArena/DriftArena.yy",},},
-    {"roomId":{"name":"Basketboll","path":"rooms/Basketboll/Basketboll.yy",},},
     {"roomId":{"name":"rm_LiepajaQuiz","path":"rooms/rm_LiepajaQuiz/rm_LiepajaQuiz.yy",},},
     {"roomId":{"name":"ZiemeluForti","path":"rooms/ZiemeluForti/ZiemeluForti.yy",},},
     {"roomId":{"name":"rm_Tarzans","path":"rooms/rm_Tarzans/rm_Tarzans.yy",},},

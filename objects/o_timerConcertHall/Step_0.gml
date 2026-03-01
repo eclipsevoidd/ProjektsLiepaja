@@ -1,6 +1,6 @@
 if (o_noteSpawner.gameStarted) {
     dt = delta_time / 1000000;
-    timer -= dt;	
+    timer -= dt;
 }
 if (timer <= 0 && !fadeCalled) {
     fadeCalled = true;

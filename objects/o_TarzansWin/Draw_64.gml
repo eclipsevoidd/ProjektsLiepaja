@@ -7,7 +7,7 @@ var cy = display_get_gui_height() / 2;
 var _deaths = 0;
 if (instance_exists(o_TarzanManager)) _deaths = o_TarzanManager.death_count;
 
-var _score = max(0, 100 - _deaths * 10);
+pscore = max(0, 100 - _deaths * 10);
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -25,7 +25,7 @@ draw_text(cx, cy + 20, "Nāves: " + string(_deaths));
 
 // Punkti
 draw_set_colour(c_yellow);
-draw_text_transformed(cx, cy + 60, "PUNKTI: " + string(_score) + " / 100", 2, 2, 0);
+draw_text_transformed(cx, cy + 60, "PUNKTI: " + string(pscore) + " / 100", 2, 2, 0);
 draw_set_colour(c_gray);
 draw_text(cx, cy + 110, "Nospied ENTER lai turpinātu");
 

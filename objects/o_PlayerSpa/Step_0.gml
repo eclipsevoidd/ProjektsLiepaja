@@ -17,8 +17,8 @@ var _angle_diff_to_opening = abs(angle_difference(angle_pos, _opening_angle));
 var _in_opening = (_angle_diff_to_opening <= _opening_half_width);
 
 // Current zone
-in_center = (radius_pos < _ctrl.CIETUMS_r_center);
-var _in_ring_zone = (radius_pos >= _ctrl.CIETUMS_r_center && radius_pos <= _ctrl.CIETUMS_r_inner + 10);
+in_center = (radius_pos < _ctrl.pool_r_center);
+var _in_ring_zone = (radius_pos >= _ctrl.pool_r_center && radius_pos <= _ctrl.pool_r_inner + 10);
 
 // Current push (weaker in center)
 var _current = in_center ? _ctrl.current_speed * 0.3 : _ctrl.current_speed;
@@ -50,8 +50,8 @@ if (_input_x != 0 || _input_y != 0) {
     _input_y /= _input_len;
     
     // Current world position
-    var _wx = _ctrl.CIETUMS_cx + lengthdir_x(radius_pos, angle_pos);
-    var _wy = _ctrl.CIETUMS_cy + lengthdir_y(radius_pos, angle_pos);
+    var _wx = _ctrl.pool_cx + lengthdir_x(radius_pos, angle_pos);
+    var _wy = _ctrl.pool_cy + lengthdir_y(radius_pos, angle_pos);
     
     // Move in screen direction
     var _speed = steer_speed * _bm;
@@ -59,49 +59,49 @@ if (_input_x != 0 || _input_y != 0) {
     var _new_wy = _wy + _input_y * _speed;
     
     // Convert back to polar
-    angle_pos = point_direction(_ctrl.CIETUMS_cx, _ctrl.CIETUMS_cy, _new_wx, _new_wy);
-    radius_pos = point_distance(_ctrl.CIETUMS_cx, _ctrl.CIETUMS_cy, _new_wx, _new_wy);
+    angle_pos = point_direction(_ctrl.pool_cx, _ctrl.pool_cy, _new_wx, _new_wy);
+    radius_pos = point_distance(_ctrl.pool_cx, _ctrl.pool_cy, _new_wx, _new_wy);
 }
 
 // --- Clamp to CIETUMS outer wall ---
-radius_pos = clamp(radius_pos, 0, _ctrl.CIETUMS_r_outer - 20);
+radius_pos = clamp(radius_pos, 0, _ctrl.pool_r_outer - 20);
 
 // --- Bronze ring wall collision ---
-// The ring is a wall between CIETUMS_r_center and CIETUMS_r_inner
+// The ring is a wall between pool_r_center and pool_r_inner
 // You can only pass through if you're at the opening angle
 
 var _new_angle_diff = abs(angle_difference(angle_pos, _opening_angle));
 var _now_in_opening = (_new_angle_diff <= _opening_half_width);
 
 // Were we outside the ring (in the swimming channel)?
-var _was_outside = (_old_radius > _ctrl.CIETUMS_r_inner + 10);
+var _was_outside = (_old_radius > _ctrl.pool_r_inner + 10);
 // Were we inside the ring (in the center)?
-var _was_inside = (_old_radius < _ctrl.CIETUMS_r_center);
+var _was_inside = (_old_radius < _ctrl.pool_r_center);
 
 // Trying to enter the ring zone from outside
-if (_was_outside && radius_pos <= _ctrl.CIETUMS_r_inner + 10) {
+if (_was_outside && radius_pos <= _ctrl.pool_r_inner + 10) {
     if (!_now_in_opening) {
         // BLOCKED — push back outside the ring
-        radius_pos = _ctrl.CIETUMS_r_inner + 12;
+        radius_pos = _ctrl.pool_r_inner + 12;
     }
 }
 
 // Trying to exit the center outward through the ring
-if (_was_inside && radius_pos >= _ctrl.CIETUMS_r_center) {
+if (_was_inside && radius_pos >= _ctrl.pool_r_center) {
     if (!_now_in_opening) {
         // BLOCKED — push back inside
-        radius_pos = _ctrl.CIETUMS_r_center - 2;
+        radius_pos = _ctrl.pool_r_center - 2;
     }
 }
 
 // If in the ring zone (between center and inner) but NOT at opening, push to nearest side
-if (radius_pos >= _ctrl.CIETUMS_r_center && radius_pos <= _ctrl.CIETUMS_r_inner + 10) {
+if (radius_pos >= _ctrl.pool_r_center && radius_pos <= _ctrl.pool_r_inner + 10) {
     if (!_now_in_opening) {
         // Decide which side to push to based on where we came from
-        if (_was_outside || _old_radius > (_ctrl.CIETUMS_r_center + _ctrl.CIETUMS_r_inner) / 2) {
-            radius_pos = _ctrl.CIETUMS_r_inner + 12;
+        if (_was_outside || _old_radius > (_ctrl.pool_r_center + _ctrl.pool_r_inner) / 2) {
+            radius_pos = _ctrl.pool_r_inner + 12;
         } else {
-            radius_pos = _ctrl.CIETUMS_r_center - 2;
+            radius_pos = _ctrl.pool_r_center - 2;
         }
     }
 }
@@ -110,8 +110,8 @@ if (radius_pos >= _ctrl.CIETUMS_r_center && radius_pos <= _ctrl.CIETUMS_r_inner 
 if (radius_pos < 15) radius_pos = 15;
 
 // Update world position
-x = _ctrl.CIETUMS_cx + lengthdir_x(radius_pos, angle_pos);
-y = _ctrl.CIETUMS_cy + lengthdir_y(radius_pos, angle_pos);
+x = _ctrl.pool_cx + lengthdir_x(radius_pos, angle_pos);
+y = _ctrl.pool_cy + lengthdir_y(radius_pos, angle_pos);
 
 // --- Collisions (same as before) ---
 if (!stunned && !invincible && !in_center) {
@@ -125,9 +125,9 @@ if (!stunned && !invincible) {
     with (o_Jet) {
         if (firing) {
             if (abs(angle_difference(other.angle_pos, jet_angle)) < 6) {
-                var _tot = _ctrl.CIETUMS_r_outer - _ctrl.CIETUMS_r_inner;
-                var _reach = _ctrl.CIETUMS_r_outer - stream_progress * _tot;
-                if (other.radius_pos <= _ctrl.CIETUMS_r_outer - 8 && other.radius_pos >= _reach - 15) {
+                var _tot = _ctrl.pool_r_outer - _ctrl.pool_r_inner;
+                var _reach = _ctrl.pool_r_outer - stream_progress * _tot;
+                if (other.radius_pos <= _ctrl.pool_r_outer - 8 && other.radius_pos >= _reach - 15) {
                     other.stunned = true; other.stun_timer = 75; _ctrl.score_total -= 50; break;
                 }
             }

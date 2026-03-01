@@ -1,7 +1,11 @@
-function fadeToRoom(targetRoom, fadeSpeed, delay){
-	var _fader = instance_create_depth(0, 0, -9999, o_FadeObject);
-	
-	_fader.targetRoom = targetRoom;
-	_fader.fadeSpeed = fadeSpeed;
-	_fader.delay = delay;
+function fadeToRoom(_targetRoom, _fadeSpeed, _delay){
+    if (instance_exists(o_FadeObject)) exit;
+    
+    var _fader = instance_create_depth(0, 0, -9999, o_FadeObject);
+    
+    with (_fader) {
+        targetRoom = _targetRoom;
+        fadeSpeed = _fadeSpeed;
+        delay = _delay;
+    }
 }

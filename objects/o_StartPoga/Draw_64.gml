@@ -14,7 +14,12 @@ if (point_in_rectangle(_mx, _my, _final_x - (sprite_width/2),
     // Check for click - Removed the panel restriction!
     if (mouse_check_button_pressed(mb_left) && !instance_exists(o_FadeObject)) {
         audio_stop_all();
-        fadeToRoom(rm_BusIntro, 1, 1);
+		if (global.intro) {
+			global.intro = false;
+			fadeToRoom(rm_BusIntro, 1, 1);
+		} else {
+			fadeToRoom(rm_Map, 1, 1);
+		}
     }
 
     ui_alpha = lerp(ui_alpha, 1.0, 0.1);

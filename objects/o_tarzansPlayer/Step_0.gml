@@ -28,18 +28,18 @@ if (dash_timer > 0)
 if (dash_cd > 0) dash_cd--;
 
 // --- Jump (skip if on rope) ---
-if (!(instance_exists(o_TARZANSsRope) && o_TARZANSsRope.has_player))
+if (!(instance_exists(o_TarzansRope) && o_TarzansRope.has_player))
 {
-    if (place_meeting(x, y + 1, o_TARZANSWal) && keyboard_check_pressed(vk_space))
+    if (place_meeting(x, y + 1, o_TarzanWal) && keyboard_check_pressed(vk_space))
     {
         vsp = jpow;
     }
 }
 
 // --- Horizontal collision ---
-if (place_meeting(x + hsp, y, o_TARZANSWal))
+if (place_meeting(x + hsp, y, o_TarzanWal))
 {
-    while (!place_meeting(x + sign(hsp), y, o_TARZANSWal))
+    while (!place_meeting(x + sign(hsp), y, o_TarzanWal))
     {
         x += sign(hsp);
     }
@@ -48,9 +48,9 @@ if (place_meeting(x + hsp, y, o_TARZANSWal))
 x += hsp;
 
 // --- Vertical collision ---
-if (place_meeting(x, y + vsp, o_TARZANSWal))
+if (place_meeting(x, y + vsp, o_TarzanWal))
 {
-    while (!place_meeting(x, y + sign(vsp), o_TARZANSWal))
+    while (!place_meeting(x, y + sign(vsp), o_TarzanWal))
     {
         y += sign(vsp);
     }
@@ -64,20 +64,20 @@ if (move != 0) image_xscale = sign(move);
 // --- Animation ---
 if (dash_timer > 0)
 {
-    sprite_index = s_TARZANSs_Dash;
+    sprite_index = s_Tarzans_Dash;
 }
-else if (!place_meeting(x, y + 1, o_TARZANSWal))
+else if (!place_meeting(x, y + 1, o_TarzanWal))
 {
     if (vsp < 0)
-        sprite_index = s_TARZANS_jump;
+        sprite_index = s_Tarzan_jump;
     else
-        sprite_index = s_TARZANS_fall;
+        sprite_index = s_Tarzan_fall;
 }
 else if (move != 0)
 {
-    sprite_index = s_TARZANS_walk;
+    sprite_index = s_Tarzan_walk;
 }
 else
 {
-    sprite_index = s_TARZANSs_Idle;
+    sprite_index = s_Tarzans_Idle;
 }
