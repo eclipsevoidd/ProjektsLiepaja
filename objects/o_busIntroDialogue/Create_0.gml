@@ -4,11 +4,11 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = ["Mostieties visi!",
 	"Drīz iebrauksim Liepājā!",
-	"Šodien mēs visas dienas garumā apskatīsim vienpadsmit vietas.",
-	"Atceraties ka šī ir mācību ekskursija tā dēļ nevarēsiet visu laiku tikai izklaidēties, bet būs arī jāmācās!",
-	"Tas man atgādina ka man jums ir jāpasaka jautrs fakts par Liepāju! Vai jūs zinājāt ka Liepājā ir vecākā elektriskā tramvaja līnija visā Latvijā?",
-	"Tā ir aptuveni 15 kilometrus gara, diezgan iespaidīgi ne?",
-	"Rekur drīz apstāsimies pie..."
+	"Šodien mēs visas dienas garumā apskatīsim vienpadsmit apskates vietas.",
+	"Atceraties, ka šī ir mācību ekskursija, tādēļ nevarēsiet visu laiku tikai izklaidēties, bet būs arī jāmācās!",
+	"Tas man atgādināja! Man jums ir jāpasaka jautrs fakts par Liepāju! Vai jūs zinājāt ka Liepājā ir vecākā elektriskā tramvaja līnija visā Latvijā?",
+	"Tā ir aptuveni 15 kilometrus gara! Diezgan iespaidīgi, ne?",
+	"Re, mēs drīz apstāsimies pie..."
 	];
 
 

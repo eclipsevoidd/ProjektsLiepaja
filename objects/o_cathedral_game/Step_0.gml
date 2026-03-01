@@ -111,7 +111,7 @@ switch (state) {
         
 	        audio_stop_sound(snd_organ);
 	        scr_submit_score(GAME.KATEDRALE, floor(points));
-	        completeMinigame(0);
+	        completeMinigame(GAME.KATEDRALE);
         
 	        fadeToRoom(rm_Map, 1, 1);
 	    }

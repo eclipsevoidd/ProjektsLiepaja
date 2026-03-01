@@ -11,7 +11,7 @@ if (_input_x != 0) {
     steer_ramp = 0; 
 }
 
-// Starts at 1.0 (heavy) and builds to 3.8 (faster for catching KONCERTZALEs)
+// Starts at 1.0 (heavy) and builds to 3.8 (faster for catching DRIFTs)
 var _dynamic_rotation = 1.0 + (steer_ramp * 2.8);
 var _turn_amount = _input_x * _dynamic_rotation * _steer_dir;
 direction -= _turn_amount;
@@ -32,7 +32,7 @@ if (_input_y != 0) {
 }
 speed_val = clamp(speed_val, -3, max_speed);
 
-// 4. HYPER-KONCERTZALE PHYSICS
+// 4. HYPER-DRIFT PHYSICS
 if (abs(speed_val) > 1) {
     var _angle_diff = angle_difference(image_angle, move_dir);
     var _is_flicking = abs(angle_difference(direction, move_dir)) > 8;
@@ -46,14 +46,14 @@ if (abs(speed_val) > 1) {
         _target_grip = 0.006; 
     }
 
-    var _KONCERTZALE_intensity = _target_grip;
+    var _DRIFT_intensity = _target_grip;
     
     // Counter-steer balance
     if (_input_x != 0 && sign(_input_x) == -sign(_angle_diff)) {
-        _KONCERTZALE_intensity = 0.045; 
+        _DRIFT_intensity = 0.045; 
     }
     
-    move_dir += angle_difference(image_angle, move_dir) * _KONCERTZALE_intensity;
+    move_dir += angle_difference(image_angle, move_dir) * _DRIFT_intensity;
     
     if (abs(_angle_diff) > 120) {
         speed_val = lerp(speed_val, 0, 0.05);
@@ -82,24 +82,24 @@ x += _h_move;
 if (place_meeting(x, y + _v_move, o_Wall)) { speed_val *= -0.4; _v_move = 0; }
 y += _v_move;
 
-// 7. WIDE KONCERTZALE MARKS
-var _is_KONCERTZALEing = abs(angle_difference(image_angle, move_dir)) > 15;
+// 7. WIDE DRIFT MARKS
+var _is_DRIFTing = abs(angle_difference(image_angle, move_dir)) > 15;
 
-if (_is_KONCERTZALEing && abs(speed_val) > 2) {
-    KONCERTZALE_timer++;
+if (_is_DRIFTing && abs(speed_val) > 2) {
+    DRIFT_timer++;
     
     // Spawns marks every 2 frames for a "spread" look
-    if (KONCERTZALE_timer % 2 == 0) {
+    if (DRIFT_timer % 2 == 0) {
         // Track width increased to 22 for a wider, more aggressive look
         var _track_width = 22; 
         
         // Left Track
         instance_create_layer(x + lengthdir_x(_track_width, image_angle + 90), 
                               y + lengthdir_y(_track_width, image_angle + 90), 
-                              "Instances", o_KONCERTZALEMark);
+                              "Instances", o_DRIFTMark);
         // Right Track
         instance_create_layer(x + lengthdir_x(_track_width, image_angle - 90), 
                               y + lengthdir_y(_track_width, image_angle - 90), 
-                              "Instances", o_KONCERTZALEMark);
+                              "Instances", o_DRIFTMark);
     }
 }

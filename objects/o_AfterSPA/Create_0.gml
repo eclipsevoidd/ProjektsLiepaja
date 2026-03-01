@@ -2,9 +2,9 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 
 //Ierakstat savu teikstu šeit ir funkcionalitāte priekš auto wrap
 //Sadalat tekstu adekvāti protams 
-dlg.dialogue_lines = ["Tas bija grūti",
-	"Ceru ka jums bija jautri",
-	"Laiks doties tālāk!"
+dlg.dialogue_lines = ["Ak vai, tas gan bija grūti.",
+	"Tomēr ceru, ka jums bija jautri!",
+	"Labi, laiks doties tālāk!"
 	];
 
 

@@ -5,7 +5,7 @@ if (o_noteSpawner.gameStarted) {
 if (timer <= 0 && !fadeCalled) {
     fadeCalled = true;
     timer = 0;
-	scr_submit_score(GAME.LOC, o_scoreConcertHall.totalScore);
-	completeMinigame(1);
+	scr_submit_score(GAME.KONCERTZALE, o_scoreConcertHall.totalScore);
+	completeMinigame(GAME.KONCERTZALE);
     fadeToRoom(rm_ConcertHallAfterShow, 1, 1);
 }

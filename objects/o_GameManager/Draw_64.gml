@@ -16,7 +16,7 @@ if (game_state == "MENU") {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(c_yellow);
-    draw_text_transformed(_cx, _cy - 100, "KONCERTZALEA ARENA", 3, 3, 0);
+    draw_text_transformed(_cx, _cy - 100, "DRIFTA ARENA", 3, 3, 0);
     
     draw_set_color(c_gray);
     draw_text(_cx, _cy - 50, string(total_laps) + " apļi");

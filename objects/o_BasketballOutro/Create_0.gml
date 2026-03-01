@@ -4,8 +4,8 @@ instance_destroy(o_Enemy);
 
 //Ierakstat savu teikstu šeit ir funkcionalitāte priekš auto wrap
 //Sadalat tekstu adekvāti protams 
-dlg.dialogue_lines = ["Pffffff",
-	"Savā jaunībā es biju sportiskāks nekā jūs, bet nulabi",
+dlg.dialogue_lines = ["Pfffft....",
+	"Savā jaunībā es biju sportiskāks nekā jūs, bet nu labi.",
 	"Laiks tālāk doties!"
 	];
 

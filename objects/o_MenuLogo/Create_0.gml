@@ -1,4 +1,4 @@
 anchor_x = x;
 anchor_y = y;
 start_x = 2500; // lerp animation start point
-KONCERTZALESpeed = -0.05;
+DRIFTSpeed = -0.05;
