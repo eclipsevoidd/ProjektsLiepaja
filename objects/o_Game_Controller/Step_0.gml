@@ -1,3 +1,7 @@
+if (!audio_is_playing(snd_PoolAmbience)) {
+        audio_play_sound(snd_PoolAmbience, 10, true); // true = loops
+    }
+
 // === MENU ===
 if (game_state == "MENU") exit;
 
@@ -10,7 +14,6 @@ if (timer <= 0) {
     timer = 0;
     game_active = false;
     game_ended = true;
-	scr_submit_score(GAME.POOL, score_total);
 	fadeToRoom(rm_AfterPool, 1, 1);
     exit;
 }

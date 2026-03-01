@@ -25,6 +25,9 @@ if (game_state == "RACING") {
     // Detect finish line crossing (left to right)
     if (o_Car.x > finish_line_x && o_Car.xprevious <= finish_line_x) {
         // Save lap time
+		
+		audio_play_sound(snd_lap_ding, 15, false);
+		
         var _lap_time = (get_timer() - lap_start_time) / 1000000;
         array_push(lap_times, _lap_time);
         if (_lap_time < best_lap_time) best_lap_time = _lap_time;
@@ -36,8 +39,6 @@ if (game_state == "RACING") {
             game_state = "FINISHED";
             final_time = (get_timer() - start_time) / 1000000;
             
-            // Calculate score: faster = more points
-            // 100 pts if par_time, 0 pts if max_time, linear between
             var _time_score = (1 - clamp((final_time - par_time) / (max_time - par_time), 0, 1)) * 100;
             
             // Wall hit penalty: -2 pts per hit, minimum 0
