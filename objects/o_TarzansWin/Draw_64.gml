@@ -16,6 +16,7 @@ draw_set_colour(c_lime);
 draw_text_transformed(cx, cy - 80, "Malacis!", 2.5, 2.5, 0);
 
 draw_set_colour(c_white);
+
 draw_text_transformed(cx, cy - 30, "Tarzāna trase pabeigta!", 1.5, 1.5, 0);
 
 // Nāves
@@ -25,7 +26,6 @@ draw_text(cx, cy + 20, "Nāves: " + string(_deaths));
 // Punkti
 draw_set_colour(c_yellow);
 draw_text_transformed(cx, cy + 60, "PUNKTI: " + string(_score) + " / 100", 2, 2, 0);
-
 draw_set_colour(c_gray);
 draw_text(cx, cy + 110, "Nospied ENTER lai turpinātu");
 

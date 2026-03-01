@@ -3,7 +3,7 @@ anchor_y = 100;
 offscreen_x = 2500; 
 x_pos = offscreen_x; 
 target_x = anchor_x; 
-driftSpeed = -0.05;
+KONCERTZALESpeed = -0.05;
 closing = false;
 is_closing = false;
 

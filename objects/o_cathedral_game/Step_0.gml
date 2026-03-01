@@ -106,16 +106,14 @@ switch (state) {
         break;
 
     case 2:
-        if (keyboard_check_pressed(vk_enter)) {
-            audio_stop_sound(snd_organ);
-
-            scr_submit_score(GAME.CATHEDRAL, floor(points));
-
-            show_message("Punkti: " + string(floor(points)) + " / " + string(max_points));
-			
-			
-			//Teleprotēšana uz outro
-			fadeToRoom(rm_KatedraleOutro, 1, 1);
-        }
-        break;
+	    if (keyboard_check_pressed(vk_enter)) {
+	        state = -1;
+        
+	        audio_stop_sound(snd_organ);
+	        scr_submit_score(GAME.KATEDRALE, floor(points));
+	        completeMinigame(0);
+        
+	        fadeToRoom(rm_Map, 1, 1);
+	    }
+	    break;
 }

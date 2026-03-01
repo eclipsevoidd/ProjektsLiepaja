@@ -14,7 +14,7 @@ if (global.state == quizState.Intro) {
     if (countdown_timer <= 0) {
         global.state = quizState.Game;
         
-        global.current_index = global.question_pool[| global.pool_index];
+        global.current_index = global.question_CIETUMS[| global.CIETUMS_index];
         global.jautajums = global.quizJautajumi[global.current_index];
 
         with(o_QuestionPanel) {

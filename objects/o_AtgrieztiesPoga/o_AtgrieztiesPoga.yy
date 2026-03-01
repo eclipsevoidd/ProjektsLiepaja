@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_PlacePanel",
+  "%Name":"o_AtgrieztiesPoga",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_PlacePanel",
+  "name":"o_AtgrieztiesPoga",
   "overriddenProperties":[],
   "parent":{
     "name":"Map",
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_QuizPanel",
-    "path":"sprites/s_QuizPanel/s_QuizPanel.yy",
+    "name":"s_AtgrieztiesPoga",
+    "path":"sprites/s_AtgrieztiesPoga/s_AtgrieztiesPoga.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -10,13 +10,13 @@ var _final_x = _current_gui_x - (global.camXOffset * driftSpeed);
 if (point_in_rectangle(_mx, _my, _final_x - (sprite_width/2), 
     _current_gui_y - (sprite_height/2), _final_x + (sprite_width/2), 
     _current_gui_y + (sprite_height/2))) {
-    
+
     // Check for click - Removed the panel restriction!
-    if (mouse_check_button_pressed(mb_left)) {
-		audio_stop_all();
+    if (mouse_check_button_pressed(mb_left) && !instance_exists(o_FadeObject)) {
+        audio_stop_all();
         fadeToRoom(rm_BusIntro, 1, 1);
     }
-        
+
     ui_alpha = lerp(ui_alpha, 1.0, 0.1);
 } else {
     ui_alpha = lerp(ui_alpha, 0.5, 0.1);
