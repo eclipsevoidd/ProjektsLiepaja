@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_SaveHighScore",
+  "%Name":"scr_saveSystem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_SaveHighScore",
+  "name":"scr_saveSystem",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -17,6 +17,7 @@
     {"name":"inst_566600C1","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
     {"name":"inst_6AD60262","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
     {"name":"inst_725E4770","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
+    {"name":"inst_5154A5D6","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},
   ],
   "isDnd":false,
   "layers":[

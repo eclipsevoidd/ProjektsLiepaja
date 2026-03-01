@@ -1,6 +1,6 @@
 var _ctrl = instance_find(o_Game_Controller, 0);
 angle_pos = 0;
-radius_pos = (_ctrl.pool_r_inner + _ctrl.pool_r_outer) / 2;
+radius_pos = (_ctrl.CIETUMS_r_inner + _ctrl.CIETUMS_r_outer) / 2;
 move_speed = 0;
 boosted = false;
 boost_timer = 0;

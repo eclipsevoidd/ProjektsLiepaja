@@ -16,12 +16,12 @@ if (animate) {
 			animate = false;
 
 			if (global.state == quizState.Game) {
-		        global.pool_index += 1;
-		        if (global.pool_index >= ds_list_size(global.question_pool)) {
-		            ds_list_shuffle(global.question_pool);
-		            global.pool_index = 0;
+		        global.CIETUMS_index += 1;
+		        if (global.CIETUMS_index >= ds_list_size(global.question_CIETUMS)) {
+		            ds_list_shuffle(global.question_CIETUMS);
+		            global.CIETUMS_index = 0;
 		        }
-		        global.current_index = global.question_pool[| global.pool_index];
+		        global.current_index = global.question_CIETUMS[| global.CIETUMS_index];
 		        global.jautajums = global.quizJautajumi[global.current_index];
 
 		        with(o_QuizButton) image_blend = c_white;

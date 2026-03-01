@@ -1,4 +1,4 @@
-var itemPool = ds_list_create();
+var itemCIETUMS = ds_list_create();
 
 var iceAmount = 5;
 var drinkAmount = 5;
@@ -6,17 +6,17 @@ keyAmount = 30 - iceAmount - drinkAmount;
 
 //o_scoreKarostasPrison.totalScore = keyAmount;
 
-repeat (iceAmount) ds_list_add(itemPool, 0); // ice
-repeat (drinkAmount) ds_list_add(itemPool, 1); // drink
-repeat (keyAmount) ds_list_add(itemPool, 2); // keys
+repeat (iceAmount) ds_list_add(itemCIETUMS, 0); // ice
+repeat (drinkAmount) ds_list_add(itemCIETUMS, 1); // drink
+repeat (keyAmount) ds_list_add(itemCIETUMS, 2); // keys
 
-ds_list_shuffle(itemPool);
+ds_list_shuffle(itemCIETUMS);
 
 var i = 0; 
 
 with (o_itemKarostasPrison)
 {
-    var type = itemPool[| i];
+    var type = itemCIETUMS[| i];
     
     switch(type)
     {
@@ -28,4 +28,4 @@ with (o_itemKarostasPrison)
     i++;
 }
 
-ds_list_destroy(itemPool);
+ds_list_destroy(itemCIETUMS);

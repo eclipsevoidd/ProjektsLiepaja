@@ -13,3 +13,4 @@ offset_when_panel_open_x = -1000;
 offset_when_panel_open_y = 375;
 
 depth = -100;
+clicked = false;
