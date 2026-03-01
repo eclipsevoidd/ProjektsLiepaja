@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_DA_BG_music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":86.099594,
+  "exportDir":"",
+  "name":"snd_DA_BG_music",
+  "parent":{
+    "name":"DriftArena",
+    "path":"folders/Sounds/DriftArena.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_DA_BG_music.mp3",
+  "volume":0.5,
+}

@@ -8,6 +8,11 @@ var _h = display_get_gui_height();
 
 // === MENU ===
 if (state == GS.MENU) {
+	
+	if (!audio_is_playing(snd_WarAmb)) {
+        audio_play_sound(snd_WarAmb, 10, true); // true = loops
+    }
+	
     draw_set_alpha(0.55);
     draw_set_color(c_black);
     draw_rectangle(0, 0, _w, _h, false);

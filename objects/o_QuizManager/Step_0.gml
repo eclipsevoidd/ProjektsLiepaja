@@ -57,6 +57,6 @@ if (global.state == quizState.End) {
         audio_stop_sound(global.quizMusic);
         
         global.transitionStarted = true;
-        fadeToRoom(rm_MainMenu, 0.5, 1);
+        fadeToRoom(rm_LiepajasQuizOutro, 1, 1);
     }
 }

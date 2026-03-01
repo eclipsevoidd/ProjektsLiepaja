@@ -1,3 +1,7 @@
+if (!audio_is_playing(snd_PoolAmbience)) {
+        audio_play_sound(snd_PoolAmbience, 10, true); // true = loops
+    }
+
 // === MENU ===
 if (game_state == "MENU") exit;
 

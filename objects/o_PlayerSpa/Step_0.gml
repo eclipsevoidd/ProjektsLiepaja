@@ -117,7 +117,11 @@ y = _ctrl.pool_cy + lengthdir_y(radius_pos, angle_pos);
 if (!stunned && !invincible && !in_center) {
     with (o_Swimmer) {
         if (point_distance(other.x, other.y, x, y) < other.col_radius + 16) {
-            other.stunned = true; other.stun_timer = 60; _ctrl.score_total -= 30; break;
+            audio_play_sound(snd_Stunned, 10, false);
+            other.stunned = true; 
+            other.stun_timer = 60; 
+            _ctrl.score_total -= 10; 
+            break;
         }
     }
 }
@@ -128,12 +132,19 @@ if (!stunned && !invincible) {
                 var _tot = _ctrl.pool_r_outer - _ctrl.pool_r_inner;
                 var _reach = _ctrl.pool_r_outer - stream_progress * _tot;
                 if (other.radius_pos <= _ctrl.pool_r_outer - 8 && other.radius_pos >= _reach - 15) {
-                    other.stunned = true; other.stun_timer = 75; _ctrl.score_total -= 50; break;
+                    other.stunned = true; other.stun_timer = 75; _ctrl.score_total -= 50;
+                    audio_play_sound(snd_Stunned, 10, false);
+                    break;
                 }
             }
         }
     }
 }
-with (o_Coin) { if (point_distance(other.x, other.y, x, y) < other.col_radius + 12) { _ctrl.score_total += 10; instance_destroy(); } }
-with (o_Duck) { if (point_distance(other.x, other.y, x, y) < other.col_radius + 14) { _ctrl.score_total += 50; instance_destroy(); } }
-with (o_Speed_Ring) { if (point_distance(other.x, other.y, x, y) < other.col_radius + 16) { _ctrl.score_total += 25; other.boosted = true; other.boost_timer = 120; instance_destroy(); } }
+with (o_Coin) { 
+	if (point_distance(other.x, other.y, x, y) < other.col_radius + 12) {
+		audio_play_sound(snd_coin, 10, false);
+		_ctrl.score_total += 5; instance_destroy(); 
+		} 
+	}
+with (o_Duck) { if (point_distance(other.x, other.y, x, y) < other.col_radius + 14) { _ctrl.score_total += 5;audio_play_sound(snd_RubberDucky,1, false); instance_destroy(); } }
+with (o_Speed_Ring) { if (point_distance(other.x, other.y, x, y) < other.col_radius + 16) { _ctrl.score_total += 5; other.boosted = true; other.boost_timer = 120; instance_destroy(); } }
