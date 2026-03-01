@@ -311,6 +311,7 @@
     {"id":{"name":"snd_jump","path":"sounds/snd_jump/snd_jump.yy",},},
     {"id":{"name":"snd_lap_ding","path":"sounds/snd_lap_ding/snd_lap_ding.yy",},},
     {"id":{"name":"snd_liepaja_menuMusic","path":"sounds/snd_liepaja_menuMusic/snd_liepaja_menuMusic.yy",},},
+    {"id":{"name":"snd_LiepajaTrashMusic","path":"sounds/snd_LiepajaTrashMusic/snd_LiepajaTrashMusic.yy",},},
     {"id":{"name":"snd_metalhit","path":"sounds/snd_metalhit/snd_metalhit.yy",},},
     {"id":{"name":"snd_organ","path":"sounds/snd_organ/snd_organ.yy",},},
     {"id":{"name":"snd_PoolAmbience","path":"sounds/snd_PoolAmbience/snd_PoolAmbience.yy",},},
