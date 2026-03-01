@@ -27,7 +27,9 @@ if (!visi_salikti) {
                 "Saņemti " + string(global.punkti) + " punkti.",
                 "Laiks doties tālāk!"
             ];
-            // room_goto_next();
+			scr_submit_score(GAME.RTU, global.punkti);
+			completeMinigame(GAME.RTU);
+			fadeToRoom(rm_Map, 1, 1);
         } else {
             global.punkti -= 10;
             if (global.punkti < 0) global.punkti = 0;

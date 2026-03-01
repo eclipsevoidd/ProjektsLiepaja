@@ -21,8 +21,10 @@ enum GAME {
     CIETUMS,
     TARZANS,
     FORTI,
+	QUIZ,
     RTU,
-    QUIZ,
+    DRIFT,
+	BEACH,
     COUNT // total count
 }
 
@@ -71,8 +73,10 @@ global.game_max[GAME.RAS] = 100;
 global.game_max[GAME.CIETUMS] = 200;
 global.game_max[GAME.TARZANS] = 100;
 global.game_max[GAME.FORTI] = 100;
-global.game_max[GAME.RTU] = 100;
 global.game_max[GAME.QUIZ] = 100;
+global.game_max[GAME.RTU] = 100;
+global.game_max[GAME.DRIFT] = 100;
+global.game_max[GAME.BEACH] = 1;
 
 for (var i = 0; i < GAME.COUNT; i++) {
     global.scores[i] = -1;

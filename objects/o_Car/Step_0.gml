@@ -96,10 +96,10 @@ if (_is_DRIFTing && abs(speed_val) > 2) {
         // Left Track
         instance_create_layer(x + lengthdir_x(_track_width, image_angle + 90), 
                               y + lengthdir_y(_track_width, image_angle + 90), 
-                              "Instances", o_DRIFTMark);
+                              "Instances", o_DriftMark);
         // Right Track
         instance_create_layer(x + lengthdir_x(_track_width, image_angle - 90), 
                               y + lengthdir_y(_track_width, image_angle - 90), 
-                              "Instances", o_DRIFTMark);
+                              "Instances", o_DriftMark);
     }
 }

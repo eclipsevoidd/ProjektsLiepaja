@@ -142,6 +142,8 @@ if (game_state == "FINISHED") {
     draw_text(_cx, _score_y + 50, "Nospied ENTER lai turpinātu");
     
     if (keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left)) {
+		scr_submit_score(GAME.DRIFT, final_score);
+		completeMinigame(GAME.DRIFT);
         fadeToRoom(rm_DriftArenaOutro, 1, 1);
     }
     

@@ -4,6 +4,4 @@ accel = 0.2;
 max_speed = 10;      
 steer_ramp = 0;
 DRIFT_timer = 0;
-
-
 hit_timer = 0;
