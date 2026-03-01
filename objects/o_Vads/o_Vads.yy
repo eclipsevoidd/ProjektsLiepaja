@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_vads_all",
+    "path":"sprites/s_vads_all/s_vads_all.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
