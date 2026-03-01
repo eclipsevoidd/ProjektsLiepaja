@@ -19,18 +19,15 @@ switch (state) {
         draw_set_halign(fa_center);
         draw_set_valign(fa_middle);
 
-        draw_set_font(fnt_title);
         draw_set_color(c_yellow);
         draw_text(400, 150, "Svētās Trīsvienības katedrāle");
 
-        draw_set_font(fnt_normal);
         draw_set_color(c_lime);
         draw_text(400, 210, "Uzdevums: Atskaņo ērģeļu melodiju!");
 
         draw_set_color(c_aqua);
         draw_text(400, 250, "Turi marķieri zaļajā zona — krāsies punkti!");
 
-        draw_set_font(fnt_title);
         draw_set_color(c_yellow);
         draw_text(400, 330, "[ ENTER — sakt ]");
 
@@ -41,7 +38,6 @@ switch (state) {
     case 1:
 
         // --- HUD ---
-        draw_set_font(fnt_normal);
 
         // Laiks
         var _secs = ceil(time_remaining / 60);
@@ -117,7 +113,6 @@ switch (state) {
         draw_rectangle(_px, _py, _px + _pw, _py + _ph, true);
 
         draw_set_halign(fa_center);
-        draw_set_font(fnt_small);
         draw_set_color(c_white);
         draw_text(_px + _pw / 2, _py + 3, string(floor(points)) + " / " + string(max_points));
 
@@ -126,14 +121,12 @@ switch (state) {
         draw_text(400, 440, "SPACE — pacelt marķieri");
 
         draw_set_halign(fa_left);
-        draw_set_font(fnt_normal);
         break;
 
     case 2:
         draw_set_halign(fa_center);
         draw_set_valign(fa_middle);
 
-        draw_set_font(fnt_title);
         var _final = floor(points);
 
         if (_final >= 80) {
@@ -150,7 +143,6 @@ switch (state) {
             draw_text(400, 130, "Hmm...");
         }
 
-        draw_set_font(fnt_title);
         draw_set_color(c_white);
         draw_text(400, 200, string(_final) + " / " + string(max_points) + " punkti");
 
@@ -177,7 +169,6 @@ switch (state) {
         draw_set_color(c_white);
         draw_rectangle(_px2, _py2, _px2 + _pw2, _py2 + _ph2, true);
 
-        draw_set_font(fnt_normal);
         draw_set_color(c_aqua);
         var _time_used = time_total - ceil(time_remaining / 60);
         draw_text(400, 310, "Laiks: " + string(_time_used) + " sekundes");

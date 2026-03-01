@@ -73,7 +73,7 @@ case GS.PLAYING:
     break;
 
 case GS.RESULTS:
-	scr_submit_score(GAME.FORT_SHOOTER, score_val);
+	scr_submit_score(GAME.FORTI, score_val);
     if (keyboard_check(vk_enter)) fadeToRoom(rm_ZiemeluFortiOutro, 1, 1);
     break;
 }

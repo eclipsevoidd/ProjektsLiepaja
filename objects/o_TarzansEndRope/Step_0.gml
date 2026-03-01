@@ -1,5 +1,5 @@
 // Grab check
-if (!has_player && !instance_exists(o_TARZANSsWin))
+if (!has_player && !instance_exists(o_TarzansWin))
 {
     if (point_distance(o_TARZANSsPlayer.x, o_TARZANSsPlayer.y, rope_anchor_x, rope_anchor_y) < 24)
     {
