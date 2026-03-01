@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_StartPoga",
+    "path":"sprites/s_StartPoga/s_StartPoga.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

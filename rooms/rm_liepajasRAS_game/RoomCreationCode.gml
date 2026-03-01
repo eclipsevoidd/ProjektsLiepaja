@@ -1,0 +1,1 @@
+audio_play_sound(snd_LiepajaTrashMusic, 0, 0, 0.5);
