@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 if (position_meeting(mouse_x, mouse_y, o_MapButton)) exit;
 
 var scroll_speed = 25;
