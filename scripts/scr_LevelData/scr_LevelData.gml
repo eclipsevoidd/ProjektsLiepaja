@@ -47,6 +47,10 @@ function get_level_data(_lv) {
 		case 10:
             _info.target_room = rm_DriftArenaIntro;
             break;
+			
+		case 11:
+            _info.target_room = rm_EndingCutscene;
+            break;
     }
     
     return _info;
