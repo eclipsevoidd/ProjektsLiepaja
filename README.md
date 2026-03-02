@@ -42,6 +42,12 @@ ieskatiem.
 - Spēles noslēgumā programma izvada reālo laiku minūtēs un sekundēs, cik ilgi spēlētājs
 pavadījis spēlē.
 - Spēles noslēgumā spēlētājam tiek pajautāts ievadīt vārdu
+- Spēlētāja vārds un spēles rezultāti (laiks, punkti u.c.) tiek saglabāti teksta failā vai datu
+bāzē.
+- Programma nodrošina lietotājam iespēju apskatīties 10 labākos spēles rezultātus –
+spēlētāja vārds, spēles laiks (minūtēs un sekundes) un punkti – sakārtotus pēc spēles laika augošā
+secībā.
+
 
 ## Izstrādes vide🔨
 
