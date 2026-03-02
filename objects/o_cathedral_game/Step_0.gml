@@ -113,7 +113,7 @@ switch (state) {
 	        scr_submit_score(GAME.KATEDRALE, floor(points));
 	        completeMinigame(GAME.KATEDRALE);
         
-	        fadeToRoom(rm_Map, 1, 1);
+	        fadeToRoom(rm_KatedraleOutro, 1, 1);
 	    }
 	    break;
 }
