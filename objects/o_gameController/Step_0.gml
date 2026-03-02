@@ -73,10 +73,18 @@ case GS.PLAYING:
     break;
 
 case GS.RESULTS:
-	scr_submit_score(GAME.FORTI, score_val);
-	completeMinigame(GAME.FORTI);
-    if (mouse_check_button_pressed(vk_enter)) {
-		fadeToRoom(rm_ZiemeluFortiOutro, 1, 1);
-	}
+    if (!variable_instance_exists(self, "results_saved")) {
+        scr_submit_score(GAME.FORTI, score_val);
+        completeMinigame(GAME.FORTI);
+        results_saved = true;
+        window_set_cursor(cr_default);
+    }
+    if (keyboard_check_pressed(vk_enter) && !instance_exists(o_FadeObject)) {
+        fadeToRoom(rm_ZiemeluFortiOutro, 1, 1);
+    }
+	if (keyboard_check_pressed(vk_enter)) {
+    show_debug_message("ENTER PRESSED");
+}
+	
     break;
 }

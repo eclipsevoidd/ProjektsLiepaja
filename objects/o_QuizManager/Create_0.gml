@@ -49,7 +49,7 @@ global.state = quizState.Game;
 global.panel_alpha = 1;
 
 // taimera iestatījumi
-global.maxTime = 2;
+global.maxTime = 104;
 global.currentTime = global.maxTime;
 global.timerActive = true;
 global.transitionStarted = false;
