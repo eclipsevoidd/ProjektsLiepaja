@@ -29,3 +29,9 @@ function completeMinigame(_level_index) {
         }
     }
 }
+
+function scr_format_time(_seconds) {
+    var _mins = floor(_seconds / 60);
+    var _secs = floor(_seconds mod 60);
+    return string(_mins) + ":" + ((_secs < 10) ? "0" : "") + string(_secs);
+}

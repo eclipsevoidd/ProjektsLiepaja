@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"o_BackToMainMenu",
+  "%Name":"o_LeaderboardDraw",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_BackToMainMenu",
+  "name":"o_LeaderboardDraw",
   "overriddenProperties":[],
   "parent":{
-    "name":"ScoreRoom",
-    "path":"folders/Objects/ScoreRoom.yy",
+    "name":"Leaderboard",
+    "path":"folders/Objects/Leaderboard.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"backbutton",
-    "path":"sprites/backbutton/backbutton.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
