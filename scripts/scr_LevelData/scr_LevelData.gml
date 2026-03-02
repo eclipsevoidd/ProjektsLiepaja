@@ -49,7 +49,7 @@ function get_level_data(_lv) {
             break;
 			
 		case 11:
-            _info.target_room = rm_Map; //rm_EndingCutscene; removed because doesnt exist yet :P
+            _info.target_room = rm_EndingCutscene;
             break;
     }
     
