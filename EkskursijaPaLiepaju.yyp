@@ -517,8 +517,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_InstantStart","path":"rooms/rm_InstantStart/rm_InstantStart.yy",},},
-    {"roomId":{"name":"rm_Map","path":"rooms/rm_Map/rm_Map.yy",},},
     {"roomId":{"name":"rm_pool","path":"rooms/rm_pool/rm_pool.yy",},},
+    {"roomId":{"name":"rm_Map","path":"rooms/rm_Map/rm_Map.yy",},},
     {"roomId":{"name":"rm_pool","path":"rooms/rm_pool/rm_pool.yy",},},
     {"roomId":{"name":"ZiemeluForti","path":"rooms/ZiemeluForti/ZiemeluForti.yy",},},
     {"roomId":{"name":"Basketboll","path":"rooms/Basketboll/Basketboll.yy",},},
