@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_StartPoga",
-    "path":"sprites/s_StartPoga/s_StartPoga.yy",
+    "name":"beigtPoga",
+    "path":"sprites/beigtPoga/beigtPoga.yy",
   },
   "spriteMaskId":null,
   "visible":true,

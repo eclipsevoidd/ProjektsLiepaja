@@ -1,4 +1,4 @@
-KONCERTZALESpeed = -0.05;
+DRIFTSpeed = -0.05;
 ui_alpha = 0;
 click_scale = 1;
 

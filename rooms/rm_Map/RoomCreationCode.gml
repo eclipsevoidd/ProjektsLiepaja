@@ -1,3 +1,7 @@
+if (!global.isRunning) {
+	global.isRunning = true;
+}
+
 if (file_exists("save_data.ini")) {
     ini_open("save_data.ini");
     global.currentLevel = ini_read_real("Progress", "level", 0);

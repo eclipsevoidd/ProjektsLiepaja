@@ -3,10 +3,10 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Ierakstat savu teikstu šeit ir funkcionalitāte priekš auto wrap
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = [
-	"Wooow",
-	"Iespaidīgi",
-	"Iedomājaties šīm ērģelēm ir 7000 stbauļu un 131 reģistrs",
-	"Priekš pirmās aktivitātes mēs varēsim uzspēlēt šīs ērģeles"
+	"Wow!!!!!!!!",
+	"Iespaidīgi!",
+	"Iedomājieties, šīm ērģelēm ir 7000 stabuļu un 131 reģistrs!",
+	"Pirmajai aktivitātei nodrošināts, ka varēsim uzspēlēt tās!"
 	];
 
 

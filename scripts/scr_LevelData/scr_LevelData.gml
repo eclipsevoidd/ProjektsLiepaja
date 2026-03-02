@@ -41,7 +41,7 @@ function get_level_data(_lv) {
             break;
 			
 		case 9:
-            _info.target_room = rm_RTUIntro;
+            _info.target_room = rm_RTU;
             break;
 			
 		case 10:

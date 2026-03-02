@@ -16,7 +16,7 @@ if (game_state == "MENU") {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(c_yellow);
-    draw_text_transformed(_cx, _cy - 100, "KONCERTZALEA ARENA", 3, 3, 0);
+    draw_text_transformed(_cx, _cy - 100, "DRIFTA ARENA", 3, 3, 0);
     
     draw_set_color(c_gray);
     draw_text(_cx, _cy - 50, string(total_laps) + " apļi");
@@ -142,6 +142,8 @@ if (game_state == "FINISHED") {
     draw_text(_cx, _score_y + 50, "Nospied ENTER lai turpinātu");
     
     if (keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left)) {
+		scr_submit_score(GAME.DRIFT, final_score);
+		completeMinigame(GAME.DRIFT);
         fadeToRoom(rm_DriftArenaOutro, 1, 1);
     }
     

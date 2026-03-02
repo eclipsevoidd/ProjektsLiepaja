@@ -4,7 +4,7 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = ["Pārsteigums visiem!",
 	"Šis ir Liepājas SPA.",
-	"Jautrs fakts šis ir viens no viss modernākajiem SPA visā Kurzemes reģionā!",
+	"Jautrs fakts - šis ir viens no vismodernākajiem SPA visā Kurzemes reģionā!",
 	"Spēles mērķis ir noķert visvairāk naudiņas un pīlītes, un jaizvairās no citiem peldētājiem."
 	];
 

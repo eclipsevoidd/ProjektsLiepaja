@@ -7,15 +7,57 @@ function save_quiz_data(_filename) {
             "image": "s_Tilts"
         },
         {
-            "question": "Es esmu jautājums?",
-            "options": ["Jā", "Nē", "Varbūt", "Nezinu"],
-            "answer": 0,
+            "question": "Cik apmeklējuma vietas spēlē?",
+            "options": ["6", "7", "10", "11"],
+            "answer": 3,
             "image": "-1"
         },
         {
-            "question": "Cik ir 2 + 2?",
-            "options": ["3", "4", "5", "Zivs"],
+            "question": "Kas attēlots bildē?",
+            "options": ["Lielā Koncertzāle", "Lielais Dzintars", "Liepājas Dzintars", "Liepājas Koncertzāle"],
             "answer": 1,
+            "image": "s_Dzintars"
+        },
+		{
+            "question": "Liepājā ir Latvijas vecākā...",
+            "options": ["Autobusu līnija", "Pilsēta", "Tramvaja līnija", "Izglītības iestāde"],
+            "answer": 2,
+            "image": "-1"
+        },
+		{
+            "question": "Katedrāles ērģelēm ir...",
+            "options": ["7000 stabuļu", "6800 stabuļu", "5430 stabuļu", "9000 stabuļu"],
+            "answer": 0,
+            "image": "-1"
+        },
+		{
+            "question": "Liepājas SPA ir modernākais...",
+            "options": ["Valstī", "Vidzemes reģionā", "Latgales reģionā", "Kurzemes reģionā"],
+            "answer": 3,
+            "image": "-1"
+        },
+		{
+            "question": "LOC komplekss ir... garš.",
+            "options": ["18 000 m2", "16 000 m2", "3000 m2", "20 000 m2"],
+            "answer": 0,
+            "image": "s_LOC"
+        },
+		{
+            "question": "Liepājas šķirošanas kompānija",
+            "options": ["Liepājas Musars", "Kurzeme Šķiro", "Liepājas RAS", "Liepājas Šķirotava"],
+            "answer": 2,
+            "image": "-1"
+        },
+		{
+            "question": "Liepājas cietums atrodas...",
+            "options": ["Centrā", "Vecliepājā", "Lauku ielā", "Karostā"],
+            "answer": 3,
+            "image": "-1"
+        },
+		{
+            "question": "Ziemeļu Fortus reiz sauca...",
+            "options": ["Cietokšņa baterija", "Dienvidu Forti", "PSRS Forti", "Liepājas Forti"],
+            "answer": 0,
             "image": "-1"
         }
     ];

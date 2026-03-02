@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_StartPoga",
-    "path":"sprites/s_StartPoga/s_StartPoga.yy",
+    "name":"backbutton",
+    "path":"sprites/backbutton/backbutton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

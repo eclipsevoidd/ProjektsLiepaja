@@ -8,6 +8,8 @@ texture_prefetch(s_PlusOne);
 
 global.sprite_map = ds_map_create();
 ds_map_add(global.sprite_map, "s_Tilts", s_Tilts);
+ds_map_add(global.sprite_map, "s_Dzintars", s_Dzintars);
+ds_map_add(global.sprite_map, "s_LOC", s_LOC);
 // kā pievienot jaunu bildi:
 // ds_map_add(global.sprite_map, "s_Bilde", s_Bilde);
 
@@ -47,7 +49,7 @@ global.state = quizState.Game;
 global.panel_alpha = 1;
 
 // taimera iestatījumi
-global.maxTime = 102;
+global.maxTime = 2;
 global.currentTime = global.maxTime;
 global.timerActive = true;
 global.transitionStarted = false;

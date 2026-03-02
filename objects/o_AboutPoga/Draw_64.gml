@@ -2,7 +2,7 @@ var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
 
 var _current_gui_x = lerp(start_x, anchor_x, global.uiEaseProgress);
-var _final_x = _current_gui_x - (global.camXOffset * KONCERTZALESpeed);
+var _final_x = _current_gui_x - (global.camXOffset * DRIFTSpeed);
 
 if (point_in_rectangle(_mx, _my, _final_x - (sprite_width/2), 
 	anchor_y - (sprite_height/2), _final_x + (sprite_width/2), 

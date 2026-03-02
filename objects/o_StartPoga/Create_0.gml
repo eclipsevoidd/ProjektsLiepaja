@@ -10,7 +10,7 @@ current_y = anchor_y;
 target_y = anchor_y;
 
 offset_when_panel_open_x = -1000;
-offset_when_panel_open_y = 375;
+offset_when_panel_open_y = 435;
 
 depth = -100;
 clicked = false;

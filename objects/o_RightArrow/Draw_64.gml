@@ -2,7 +2,7 @@ if (instance_exists(o_AboutPanel)) {
     var _mx = device_mouse_x_to_gui(0);
     var _my = device_mouse_y_to_gui(0);
     
-    var _base_x = o_AboutPanel.x_pos - (global.camXOffset * KONCERTZALESpeed);
+    var _base_x = o_AboutPanel.x_pos - (global.camXOffset * DRIFTSpeed);
     var _base_y = o_AboutPanel.anchor_y;
 
     var _final_x = _base_x + offset_x;
