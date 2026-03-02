@@ -180,7 +180,7 @@
     {"id":{"name":"o_LiepajasRASOutro","path":"objects/o_LiepajasRASOutro/o_LiepajasRASOutro.yy",},},
     {"id":{"name":"o_LiepajasRASPlayer","path":"objects/o_LiepajasRASPlayer/o_LiepajasRASPlayer.yy",},},
     {"id":{"name":"o_Map","path":"objects/o_Map/o_Map.yy",},},
-    {"id":{"name":"o_MapButton_1","path":"objects/o_MapButton_1/o_MapButton_1.yy",},},
+    {"id":{"name":"o_MapButton","path":"objects/o_MapButton/o_MapButton.yy",},},
     {"id":{"name":"o_MapController","path":"objects/o_MapController/o_MapController.yy",},},
     {"id":{"name":"o_MenuLogo","path":"objects/o_MenuLogo/o_MenuLogo.yy",},},
     {"id":{"name":"o_noteLine","path":"objects/o_noteLine/o_noteLine.yy",},},
