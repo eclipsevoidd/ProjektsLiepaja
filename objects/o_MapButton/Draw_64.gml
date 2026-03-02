@@ -4,9 +4,7 @@ if (hover_alpha > 0.01) {
     var _gui_x = x - _cam_x;
     var _gui_y = y - _cam_y;
 	
-	var _data = get_level_data(level);
-    var _name = string_upper(location_name); 
-
+    var _data = get_level_data(level);
     var _name = string_upper(location_name); 
     var _desc = location_description;
     
@@ -31,24 +29,19 @@ if (hover_alpha > 0.01) {
     var _x2 = _x1 + _box_w;
     var _y2 = _y1 + _box_h;
 
-    // 5. Draw the Simple Black Background
-    draw_set_alpha(hover_alpha * 0.9); // Slightly transparent black
+    draw_set_alpha(hover_alpha * 0.9);
     draw_set_color(c_black);
     draw_rectangle(_x1, _y1, _x2, _y2, false);
     
-    // 6. Draw Title
     draw_set_alpha(hover_alpha);
     draw_set_color(c_white);
     draw_set_font(f_FranklinGothicMedLarge);
     draw_set_halign(fa_center);
-    // Draw title centered relative to the BOX, not the button (due to the clamp)
     draw_text(_x1 + (_box_w / 2), _y1 + _padding, _name);
     
-    // 7. Draw Description
     draw_set_font(f_FranklinGothicMedium);
     draw_text_ext(_x1 + (_box_w / 2), _y1 + _padding + _title_space, _desc, _line_h, _wrap_w);
 
-    // Reset Draw State
     draw_set_alpha(1);
     draw_set_halign(fa_left);
 }

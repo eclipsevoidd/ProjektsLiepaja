@@ -1,13 +1,13 @@
 if (!global.paused) exit;
 
-var _cam_y = camera_get_view_y(view_camera[0]);
 var _cam_x = camera_get_view_x(view_camera[0]);
+var _cam_y = camera_get_view_y(view_camera[0]);
 var _vw = camera_get_view_width(view_camera[0]);
 var _vh = camera_get_view_height(view_camera[0]);
 var _cx = _cam_x + _vw / 2;
 var _cy = _cam_y + _vh / 2;
 
-// Dim overlay - cover the visible area
+// Dim overlay
 draw_set_alpha(0.5);
 draw_set_colour(c_black);
 draw_rectangle(_cam_x, _cam_y, _cam_x + _vw, _cam_y + _vh, false);
