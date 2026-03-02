@@ -18,7 +18,7 @@ if (instance_exists(o_AboutPanel)) {
     if (_hovering && mouse_check_button_pressed(mb_left) && !o_AboutPanel.closing) {
         click_scale = 0.75;
         with (o_AboutPanel) {
-            image_index = (image_index < 2) ? image_index + 1 : 0;
+            image_index = (image_index < 3) ? image_index + 1 : 0;
         }
     }
     
