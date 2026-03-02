@@ -1,5 +1,9 @@
 if (keyboard_check_pressed(vk_escape)) {
     global.paused = !global.paused;
+    
+    if (global.paused) {
+        saved_cam_y = camera_get_view_y(view_camera[0]);
+    }
 }
 
 if (!global.paused) exit;
@@ -24,6 +28,7 @@ var _btn_resume_hh = sprite_get_height(s_btn_resume) / 2;
 var _btn_exit_hw = sprite_get_width(s_btn_exit) / 2;
 var _btn_exit_hh = sprite_get_height(s_btn_exit) / 2;
 
+// Resume
 hover_resume = point_in_rectangle(_mx, _my,
     _resume_cx - _btn_resume_hw, _resume_cy - _btn_resume_hh,
     _resume_cx + _btn_resume_hw, _resume_cy + _btn_resume_hh);
@@ -31,6 +36,7 @@ if (hover_resume && mouse_check_button_pressed(mb_left)) {
     global.paused = false;
 }
 
+// Exit
 hover_exit = point_in_rectangle(_mx, _my,
     _exit_cx - _btn_exit_hw, _exit_cy - _btn_exit_hh,
     _exit_cx + _btn_exit_hw, _exit_cy + _btn_exit_hh);
@@ -38,6 +44,7 @@ if (hover_exit && mouse_check_button_pressed(mb_left)) {
     game_end();
 }
 
+// Slider
 var _slider_w = 300;
 var _slider_y = _cy + 10;
 slider_min_x = _cx - _slider_w / 2;

@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_screm",
+  "%Name":"snd_Wires",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.2523355,
+  "duration":0.63,
   "exportDir":"",
-  "name":"snd_screm",
+  "name":"snd_Wires",
   "parent":{
-    "name":"Ziemeu  forti",
-    "path":"folders/Sounds/Ziemeu  forti.yy",
+    "name":"RTU",
+    "path":"folders/Sounds/RTU.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_screm.mp3",
-  "volume":0.5,
+  "soundFile":"snd_Wires.mp3",
+  "volume":1.0,
 }

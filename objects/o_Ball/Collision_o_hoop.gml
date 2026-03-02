@@ -1,11 +1,9 @@
-if (!scored) {
+if (!scored && vsp > 0) {
     scored = true;
-
     instance_create_layer(other.x, other.y, "Instances", o_ScoreEffect);
     hsp = 0;
     vsp = 2;
-
-    // Award points to the correct team
+    
     if (variable_global_exists("hoop_player_target")) {
         if (other.id == global.hoop_player_target) {
             global.player_score += global.points_per_basket;
@@ -13,14 +11,12 @@ if (!scored) {
             global.enemy_score += global.points_per_basket;
         }
     }
-
     if (instance_exists(o_Enemy)) {
         o_Enemy.has_ball = false;
         o_Enemy.is_shooting = false;
         o_Enemy.hsp = 0;
         o_Enemy.vsp = 0;
     }
-
     if (global.game_state == "PRACTICE") {
         alarm[0] = 60;
     }
@@ -30,4 +26,6 @@ if (!scored) {
     } else {
         alarm[0] = 60;
     }
+} else if (!scored && vsp <= 0) {
+    vsp = abs(vsp);
 }

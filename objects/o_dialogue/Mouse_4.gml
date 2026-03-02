@@ -15,10 +15,10 @@ if (showing_text) {
 
     if (current_line >= array_length(dialogue_lines)) {
     showing_text = false;
+	
 
     callback_after_dialogue();
     
 
-    instance_destroy();
 }
 }
