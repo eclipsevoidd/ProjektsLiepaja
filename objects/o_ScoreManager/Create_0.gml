@@ -84,6 +84,20 @@ for (var i = 0; i < GAME.COUNT; i++) {
 
 global.leaderboard = [];
 
+if (file_exists("leaderboard.json")) {
+    var _lb_file = file_text_open_read("leaderboard.json");
+    var _lb_json = "";
+    while (!file_text_eof(_lb_file)) {
+        _lb_json += file_text_read_string(_lb_file);
+        file_text_readln(_lb_file);
+    }
+    file_text_close(_lb_file);
+    var _lb_data = json_parse(_lb_json);
+    if (is_array(_lb_data)) {
+        global.leaderboard = _lb_data;
+    }
+}
+
 // =============================================
 // TIMING
 // =============================================

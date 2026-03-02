@@ -1,3 +1,6 @@
+name_dialog_id = -1;
+name_entered = false;
+
 var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 
 //Ierakstat savu teikstu šeit ir funkcionalitāte priekš auto wrap
@@ -12,6 +15,5 @@ dlg.dialogue_lines = [
 
 
 dlg.callback_after_dialogue = function() {
-	scr_finalize_player();
-    fadeToRoom(rm_MainMenu, 1, 1); // pirmajā laukā ierakstat uz kuru istabu sūtīsiet, pārējo neaiztikt!
+    name_dialog_id = get_string_async("Ievadi savu vārdu:", "");
 };

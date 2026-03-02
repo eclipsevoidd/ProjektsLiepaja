@@ -1,19 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"o_PludmaleDialog_2",
+  "%Name":"o_persObject",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":63,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_PludmaleDialog_2",
+  "name":"o_persObject",
   "overriddenProperties":[],
   "parent":{
     "name":"Ending",
     "path":"folders/Objects/Ending.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

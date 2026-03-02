@@ -7,10 +7,11 @@ var _start_y = 200;
 var _row_h = 60;
 
 draw_text(_title_x, 100, "TOP 10");
+show_debug_message(string(global.leaderboard));
 
 for (var i = 0; i < array_length(global.leaderboard); i++) {
     var _entry = global.leaderboard[i];
-    var _name = _entry.name;
+    var _name = string(_entry.name);
     var _time = scr_format_time(_entry.time);
     var _score = string(_entry.p_score);
     var _text = string(i + 1) + ".  " + _name + "     " + _time + "     " + _score + " punkti";
