@@ -45,4 +45,5 @@ Spēle ir izstrādāta Gamemaker vidē un tā ir skriptēta Gamemaker paša valo
 ## Papildus apskatāmie resursi🛜
 
 Šajā <a href="https://www.youtube.com/@bomzs1">YouTube</a> kanālā var apskatīt dažus izstrādes proces apskates video.
+
 Šajā <a href="https://eclipsevoid.bandcamp.com/album/ekskursija-pa-liep-ju-original-soundtrack">vietnē</a> jūs varat dabūt šīs spēles mūziku.
