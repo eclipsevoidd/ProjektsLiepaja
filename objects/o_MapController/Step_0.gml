@@ -1,6 +1,6 @@
 if (global.paused) exit;
 
-if (position_meeting(mouse_x, mouse_y, o_MapButton)) exit;
+if (position_meeting(mouse_x, mouse_y, o_MapButtonIzklaide)) exit;
 
 var scroll_speed = 25;
 var edge_size = 80;

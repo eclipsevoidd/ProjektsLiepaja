@@ -26,7 +26,7 @@ switch (state) {
         draw_text(400, 210, "Uzdevums: Atskaņo ērģeļu melodiju!");
 
         draw_set_color(c_aqua);
-        draw_text(400, 250, "Turi marķieri zaļajā zona — krāsies punkti!");
+        draw_text(400, 250, "Turi marķieri zaļajā zona, Kustinot to ar SPACE krāsies punkti!");
 
         draw_set_color(c_yellow);
         draw_text(400, 330, "[ ENTER — sakt ]");

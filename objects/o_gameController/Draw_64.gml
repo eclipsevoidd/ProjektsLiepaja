@@ -89,7 +89,7 @@ if (state == GS.RESULTS) {
     draw_text_transformed(_w/2, _h/2 - 50, "Punkti: " + string(score_val), 2, 2, 0);
 
     draw_set_color(c_gray);
-    draw_text(_w/2, _h/2 + 100, "Nospied, lai beigtu spēli");
+    draw_text(_w/2, _h/2 + 100, "Nospied ENTER lai beigtu spēli");
 }
 
 draw_set_alpha(1); draw_set_halign(fa_left); draw_set_valign(fa_top); draw_set_color(c_white);
