@@ -75,7 +75,7 @@ case GS.PLAYING:
 case GS.RESULTS:
 	scr_submit_score(GAME.FORTI, score_val);
 	completeMinigame(GAME.FORTI);
-    if (mouse_check_button_pressed(vk_enter)) {
+    if (keyboard_check_pressed(vk_enter)) {
 		fadeToRoom(rm_ZiemeluFortiOutro, 1, 1);
 	}
     break;
