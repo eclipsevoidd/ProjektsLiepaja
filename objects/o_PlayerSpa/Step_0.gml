@@ -132,7 +132,7 @@ if (!stunned && !invincible) {
                 var _tot = _ctrl.pool_r_outer - _ctrl.pool_r_inner;
                 var _reach = _ctrl.pool_r_outer - stream_progress * _tot;
                 if (other.radius_pos <= _ctrl.pool_r_outer - 8 && other.radius_pos >= _reach - 15) {
-                    other.stunned = true; other.stun_timer = 75; _ctrl.score_total -= 50;
+                    other.stunned = true; other.stun_timer = 75; _ctrl.score_total -= 20;
                     audio_play_sound(snd_Stunned, 10, false);
                     break;
                 }

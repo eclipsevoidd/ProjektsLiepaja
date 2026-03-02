@@ -3,7 +3,7 @@ state = 0;
 points = 0;
 max_points = 100;
 
-time_total = 1;
+time_total = 60;
 time_remaining = time_total * 60;
 
 point_speed = 100 / (time_total * 60); 

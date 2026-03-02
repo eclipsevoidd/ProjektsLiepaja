@@ -88,5 +88,28 @@ if (instance_exists(_player)) {
     }
 }
 
+// --- Arrow with "TU" above player ---
+if (instance_exists(_player)) {
+    var _bob = sin(current_time / 200) * 5;
+    var _ax = _player.x;
+    var _ay = _player.y - 50 + _bob;
+    
+    // Arrow pointing down
+    draw_set_colour(c_white);
+    draw_triangle(_ax - 8, _ay - 10, _ax + 8, _ay - 10, _ax, _ay, false);
+    
+    // "TU" text
+    draw_set_font(f_FranklinGothicMedium);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_bottom);
+    draw_set_colour(c_black);
+    draw_text(_ax + 1, _ay - 11, "TU");
+    draw_set_colour(c_white);
+    draw_text(_ax, _ay - 12, "TU");
+    
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+}
+
 draw_set_color(c_white);
 draw_set_alpha(1);

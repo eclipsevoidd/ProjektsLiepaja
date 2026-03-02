@@ -12,7 +12,7 @@ switch (state) {
         break;
     case "firing":
         warning = false; firing = true;
-        stream_progress = min(1, stream_progress + 0.05);
-        if (state_timer <= 0) { state = "idle"; state_timer = floor(cooldown_duration / _ctrl.difficulty); firing = false; }
+        stream_progress = min(1, stream_progress + 0.03); // was 0.05 — slower stream
+        if (state_timer <= 0) { state = "idle"; state_timer = floor(cooldown_duration / max(_ctrl.difficulty, 1)); firing = false; }
         break;
 }
