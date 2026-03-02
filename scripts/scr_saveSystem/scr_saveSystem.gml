@@ -16,6 +16,8 @@ function saveProgress() {
 function completeMinigame(_level_index) {
     if (_level_index >= 0 && _level_index < array_length(global.checkFirstTime)) {
         
+        global.can_retry_level = _level_index;
+        
         if (global.checkFirstTime[_level_index] == false) {
             global.currentLevel += 1;
             global.checkFirstTime[_level_index] = true;
@@ -25,7 +27,7 @@ function completeMinigame(_level_index) {
             
             show_debug_message("Līmenis iziets, dati saglabāti");
         } else {
-            show_debug_message("Līmenis jau ieporiekš iziets.");
+            show_debug_message("Līmenis jau iepriekš iziets.");
         }
     }
 }

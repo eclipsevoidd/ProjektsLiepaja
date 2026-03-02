@@ -30,6 +30,7 @@ if (selected) {
                 x = tuvakais_slot.x;
                 y = tuvakais_slot.y;
                 tuvakais_slot.occupant = vada_id;
+				audio_play_sound(snd_Wires, 10, false);
             } else {
                 x = anchor_x;
                 y = anchor_y;
