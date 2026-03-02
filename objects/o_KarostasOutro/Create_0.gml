@@ -4,6 +4,7 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = [
 	"Ceru ka bija intensīvi!",
+	"Neviens kāju nav salauzis?",
 	"Patiesībā es esmu izbēdzis ārā no šī cietuma, bet tas ir stāsts citai dienai ;)",
 	"Ejam talāk!"
 	];

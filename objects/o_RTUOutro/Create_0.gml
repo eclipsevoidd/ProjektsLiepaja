@@ -5,7 +5,8 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 dlg.dialogue_lines = [
 	"Ah, kā vecajos labajos laikos...",
 	"Tagad viss ir tikai vēl modernāks.",
-	"Labi, dosimies uz pēdējo vietu."
+	"Labi, dosimies uz pēdējo vietu.",
+	"Pirms mani mana bijusī skolotāja!"
 	];
 
 
