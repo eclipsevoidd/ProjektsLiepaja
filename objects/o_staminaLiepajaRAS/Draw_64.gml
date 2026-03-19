@@ -4,7 +4,7 @@ max_stamina = o_LiepajasRASPlayer.max_stamina;
 bar_width = 200;
 bar_height = 20;
 bar_x = 32;
-bar_y = 50;
+bar_y = 60;
 
 fill_width = (stamina / max_stamina) * bar_width;
 // Background

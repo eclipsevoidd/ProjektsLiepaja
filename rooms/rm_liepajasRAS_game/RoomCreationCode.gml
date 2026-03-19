@@ -1,1 +1,1 @@
-audio_play_sound(chiptune, 0, 1, 0.5);
+audio_play_sound(chiptune, 0, 1, 0.15);

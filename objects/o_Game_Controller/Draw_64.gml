@@ -15,7 +15,8 @@ if (game_state == "MENU") {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(c_yellow);
-    draw_text_transformed(_cx, _cy - 100, "LIEPĀJAS SPA", 3, 3, 0);
+	draw_set_font(f_FranklinGothicLarge)
+    draw_text_transformed(_cx, _cy - 100, "LIEPĀJAS SPA", 1, 1, 0);
     
     draw_set_color(c_gray);
     draw_text(_cx, _cy - 55, "Savāc monētas un izvairies no peldētājiem!");
@@ -68,13 +69,16 @@ if (game_state == "PLAYING") {
     var _sec = ceil(timer / game_get_speed(gamespeed_fps));
     var _ts = string(_sec div 60) + ":" + string_replace(string_format(_sec mod 60, 2, 0), " ", "0");
     
-    draw_set_color(c_black); draw_set_alpha(0.5);
+	draw_set_font(f_FranklinGothicMedLarge)
+    draw_set_color(c_black); 
+	draw_set_alpha(0.5);
     draw_text(_cx + 2, 22, _ts);
     draw_set_alpha(1);
-    draw_set_color((_sec <= 10) ? c_red : c_white);
-    draw_text(_cx, 20, _ts);
+    draw_set_color((_sec <= 10) ? c_red : c_black);
+    draw_text(_cx, 20, _ts + "\n\nWASD - kustēties\nSHIFT - peldēt ātrak");
     
     // Punkti
+	draw_set_font(f_FranklinGothicMedLarge)
     draw_set_halign(fa_right);
     draw_set_color(c_black); draw_set_alpha(0.5);
     draw_text(_w - 18, 22, "Punkti: " + string(score_total));
@@ -104,7 +108,8 @@ if (game_state == "ENDED") {
     draw_text_transformed(_cx, _cy - 60, "Laiks beidzās!", 2.5, 2.5, 0);
     
     draw_set_color(make_color_rgb(255, 220, 50));
-    draw_text_transformed(_cx, _cy, "Tavi punkti: " + string(score_total), 2, 2, 0);
+	draw_set_font(f_FranklinGothicLarge)
+    draw_text_transformed(_cx, _cy, "Tavi punkti: " + string(score_total), 1, 1, 0);
     
     draw_set_color(c_gray);
     draw_text(_cx, _cy + 60, "Nospied ENTER lai turpinātu");
