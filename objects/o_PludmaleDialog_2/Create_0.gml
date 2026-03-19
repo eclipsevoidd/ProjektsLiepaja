@@ -7,7 +7,7 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = [
 	"Paldies ka spēlēji mūsu spēli! - Gustavs, Viktors un Rodrigo.",
-	"Ceram ka izbaudiji :)",
+	"Ceram ka izbaudīji :)",
 	"--Sasniegumi--",
 	"Tavi punkti: " + string(scr_get_total_score()),
     "Tavs spēles laiks: " + scr_format_time(global.playTime)

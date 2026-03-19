@@ -3,11 +3,11 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Ierakstat savu teikstu šeit ir funkcionalitāte priekš auto wrap
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = ["Tā, šī ir nākamā pieturvieta.",
-	"Šī ir Liepājas koncertzāle - Lielais Dzintars, uzcelta 2015 gadā.",
+	"Šī ir Liepājas koncertzāle - Lielais Dzintars. Tā tika uzcelta 2015. gadā.",
 	"Šī ir viena no manām mīļākajām koncertzālēm.",
 	"Šeit arī ir teātris, kuru vietējie iedzīvotāji apmeklē.",
 	"Tagad visi man sekojat - mums būs privāts koncerta mēģinājums, kuru varēsim visi noklausīties.",
-	"Man tikai ātri jāpārģērbjas!.",
+	"Man tikai ātri jāpārģērbjas!",
 	"Lai spēlētu spēli, tev vajadzēs izmantot bultiņtaustiņus vai WASD un nospiest tos, kad tie ieiet zaļajā laukumā."
 	];
 

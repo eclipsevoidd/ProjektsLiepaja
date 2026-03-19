@@ -6,7 +6,10 @@ dlg.dialogue_lines = [
 	"Ceru, ka jūs esat kaut ko jaunu iemācijušies!",
 	"Tagad laiks braukt uz ļoti biedējošu vietu.",
 	"...",
-	"Maiņas drēbes diez jums ir?"
+	"Es cerēšu, ka maiņas drēbes jums ir, jo man ir!",
+	"Jums nav?",
+	"..................",
+	"Nekas, ejam tālāk!"
 	];
 
 

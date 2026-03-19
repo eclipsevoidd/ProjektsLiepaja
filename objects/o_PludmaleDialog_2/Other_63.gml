@@ -9,8 +9,6 @@ if (async_load[? "id"] == name_dialog_id)
 
     name_dialog_id = -1;
 
-    show_debug_message("FINAL NAME: " + global.player_name);
-
     scr_finalize_player();
     fadeToRoom(rm_MainMenu, 1, 1);
 }

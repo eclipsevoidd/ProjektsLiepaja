@@ -4,11 +4,13 @@ var dlg = instance_create_layer(0, 0, "Instances", o_dialogue); //NEAIZTIKT!!!
 //Sadalat tekstu adekvāti protams 
 dlg.dialogue_lines = [
 
-	"Tas bija jautri nē?",
-	"Jautrs fakts šeit ir atrodami gan īsti dzintari, gan viltotie dzintari tos labāk neaiztikt.",
-	"Es ceru ka jums bija jautri apmeklēt Liepāju, kādu dienu mēs varētu atklal nē?",
+	"Tas bija jautri, vai ne?",
+	"Jautrs fakts - šeit ir atrodami gan īsti dzintari, gan viltotie dzintari. Tos gan labāk neaiztikt.",
+	"Es ceru, ka jums bija jautri apmeklēt Liepāju.",
+	"Atbrauksim kādu dienu atkal!",
 	"...",
-	"Kas tie tādi par..."
+	"Paga, kas tie tādi par...",
+	"!!!!!!!!"
 	];
 
 

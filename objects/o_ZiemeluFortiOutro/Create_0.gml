@@ -6,7 +6,7 @@ dlg.dialogue_lines = ["Man jāatzīst, šī bija iespaidīga vieta.",
 	"Tagad nedaudz nomierināsimies un atgriezīsimies centrā.",
 	"Pa ceļam apstāsimies lai izpildītu vienu testu.",
 	"...",
-	"Un smiltis izkratī pa ceļam."
+	"Neaizmirsti vispirms smiltis izkratīt no kurpēm, tikai!"
 	];
 
 

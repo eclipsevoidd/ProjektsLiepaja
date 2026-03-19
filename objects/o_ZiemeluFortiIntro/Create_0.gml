@@ -6,7 +6,7 @@ dlg.dialogue_lines = ["Sveicināti Ziemeļu fortos!",
 	"Šīs vietas vēsturiskais nosaukums bija Cietokšņa baterija Nr. 1.",
 	"Šeit arī piedāvā spēli - ",
 	"Bēgšana no PSRS!",
-	"Šeit mēs pārbaudīsim vai jūs varat atraidīt ienaidniekus, kuri šeit tev uzbruktu!"
+	"Šeit mēs pārbaudīsim, vai jūs varat atraidīt ienaidniekus, kuri šeit tev uzbruktu!"
 	];
 
 
