@@ -2,8 +2,8 @@ if (totalScore < 0) {
     totalScore = 0;
 }
 
-
-draw_text_transformed(30, 30, "Atlikušās atslēgas: " + string(totalScore), 2, 2, 0);
+draw_set_font(f_FranklinGothicMedium);
+draw_text_transformed(30, 20, "Atlikušās atslēgas: " + string(totalScore) + "\nWASD - kustēties\nShift - skriet", 1.7, 1.5, 0);
 
 if(totalScore == 0){
 	

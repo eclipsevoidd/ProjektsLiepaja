@@ -1,4 +1,4 @@
-draw_set_font(f_FranklinGothicMedium);
+draw_set_font(f_FranklinGothicMedLarge);
 
 if (sprite_exists(s_KatedralsBG)) {
     draw_sprite_stretched(s_KatedralsBG, 0, 0, 0, 800, 450);
@@ -26,10 +26,10 @@ switch (state) {
         draw_text(400, 210, "Uzdevums: Atskaņo ērģeļu melodiju!");
 
         draw_set_color(c_aqua);
-        draw_text(400, 250, "Turi marķieri zaļajā zona, Kustinot to ar SPACE krāsies punkti!");
+        draw_text(400, 250, "Noturi taisnstūri zaļajā zonā, izmantojot SPACE taustiņu,\nlai krātu punktus!.");
 
         draw_set_color(c_yellow);
-        draw_text(400, 330, "[ ENTER — sakt ]");
+        draw_text(400, 330, "[ ENTER - SĀKT ]");
 
         draw_set_halign(fa_left);
         draw_set_valign(fa_top);
@@ -94,7 +94,7 @@ switch (state) {
         var _px = 150;
         var _py = 410;
         var _pw = 500;
-        var _ph = 22;
+        var _ph = 30;
 
         draw_set_color(c_dkgray);
         draw_rectangle(_px, _py, _px + _pw, _py + _ph, false);
@@ -114,11 +114,11 @@ switch (state) {
 
         draw_set_halign(fa_center);
         draw_set_color(c_white);
-        draw_text(_px + _pw / 2, _py + 3, string(floor(points)) + " / " + string(max_points));
+        draw_text(_px + _pw / 2, _py + 1, string(floor(points)) + " / " + string(max_points));
 
         // Padoms
         draw_set_color(c_aqua);
-        draw_text(400, 440, "SPACE — pacelt marķieri");
+        draw_text(400, 380, "SPACE - pacelt taisnstūri");
 
         draw_set_halign(fa_left);
         break;
@@ -140,7 +140,7 @@ switch (state) {
             draw_text(400, 130, "Var labāk...");
         } else {
             draw_set_color(c_red);
-            draw_text(400, 130, "Hmm...");
+            draw_text(400, 130, "Nav labi.");
         }
 
         draw_set_color(c_white);
